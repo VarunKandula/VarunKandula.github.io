@@ -101,9 +101,15 @@
   const hand = (g, [w, len, cls]) =>
     el("rect", { x: 50 - w / 2, y: 50 - len, width: w, height: len + 5, rx: w / 2, class: `hand ${cls}` }, g);
 
+  const motion = matchMedia("(prefers-reduced-motion: reduce)");
   const watches = [];
   document.querySelectorAll("[data-watch]").forEach((li) => {
-    const svg = el("svg", { viewBox: "0 0 100 100", role: "img", "aria-label": `${li.dataset.name} watch showing the current time` });
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "watch-winder";
+    button.setAttribute("aria-label", `Wind the ${li.dataset.name} watch`);
+    button.title = "Give it a wind";
+    const svg = el("svg", { viewBox: "0 0 100 100", "aria-hidden": "true" });
     const g = el("g", {}, svg);
     const spec = faces[li.dataset.watch](g);
     const hands = { h: hand(g, spec.h), m: hand(g, spec.m) };
@@ -113,24 +119,80 @@
       hands.sub = el("line", { x1: cx, y1: cy, x2: cx, y2: cy - 8, class: "ink-s", "stroke-width": 0.7, "stroke-linecap": "round", style: `transform-origin:${cx}px ${cy}px` }, g);
     }
     el("circle", { cx: 50, cy: 50, r: 1.8, class: spec.s ? spec.s[2] : "ink" }, g);
-    li.prepend(svg);
-    watches.push(hands);
+    button.append(svg);
+    li.prepend(button);
+    const watch = { hands, li, windingSince: null };
+    watches.push(watch);
+    button.addEventListener("click", () => {
+      if (watch.windingSince !== null) return;
+      say("Time well wasted.");
+      if (motion.matches) return;
+      watch.windingSince = performance.now();
+      li.classList.add("is-winding");
+    });
   });
 
-  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const frame = () => {
+  const drawWatches = (now) => {
     const d = new Date();
     const ms = d.getMilliseconds();
-    const s = d.getSeconds() + (reduce ? 0 : ms / 1000);
+    const s = d.getSeconds() + (motion.matches ? 0 : ms / 1000);
     const m = d.getMinutes() + s / 60;
     const h = (d.getHours() % 12) + m / 60;
-    for (const w of watches) {
-      w.h.style.transform = `rotate(${h * 30}deg)`;
-      w.m.style.transform = `rotate(${m * 6}deg)`;
-      if (w.s) w.s.style.transform = `rotate(${s * 6}deg)`;
-      if (w.sub) w.sub.style.transform = `rotate(${s * 6}deg)`;
+    for (const watch of watches) {
+      let turn = 0;
+      if (watch.windingSince !== null) {
+        const progress = Math.min((now - watch.windingSince) / 1200, 1);
+        if (progress === 1) {
+          watch.windingSince = null;
+          watch.li.classList.remove("is-winding");
+        } else {
+          turn = 1 - (1 - progress) ** 3;
+        }
+      }
+      const w = watch.hands;
+      w.h.style.transform = `rotate(${h * 30 + turn * 360}deg)`;
+      w.m.style.transform = `rotate(${m * 6 + turn * 720}deg)`;
+      if (w.s) w.s.style.transform = `rotate(${s * 6 + turn * 1080}deg)`;
+      if (w.sub) w.sub.style.transform = `rotate(${s * 6 + turn * 1080}deg)`;
     }
-    reduce ? setTimeout(frame, 1000 - ms) : requestAnimationFrame(frame);
   };
-  if (watches.length) frame();
+
+  let watchFrame;
+  let watchTimer;
+  let watchesVisible = false;
+  const stopWatches = () => {
+    cancelAnimationFrame(watchFrame);
+    clearTimeout(watchTimer);
+  };
+  const frame = (now) => {
+    if (!watchesVisible || document.hidden) return;
+    drawWatches(now);
+    if (motion.matches) watchTimer = setTimeout(() => frame(performance.now()), 1000 - new Date().getMilliseconds());
+    else watchFrame = requestAnimationFrame(frame);
+  };
+  const syncWatches = () => {
+    stopWatches();
+    if (!watchesVisible || document.hidden || motion.matches) {
+      for (const watch of watches) {
+        watch.windingSince = null;
+        watch.li.classList.remove("is-winding");
+      }
+    }
+    drawWatches(performance.now());
+    if (watchesVisible && !document.hidden) frame(performance.now());
+  };
+  if (watches.length) {
+    drawWatches(performance.now());
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(([entry]) => {
+        watchesVisible = entry.isIntersecting;
+        syncWatches();
+      }).observe(document.querySelector("[data-watches]"));
+    } else {
+      watchesVisible = true;
+      syncWatches();
+    }
+    document.addEventListener("visibilitychange", syncWatches);
+    motion.addEventListener("change", syncWatches);
+  }
 })();

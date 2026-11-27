@@ -17,6 +17,7 @@ Varun Kandula's personal website, rebuilt from his supplied Devin export and scr
 - Keep the San Francisco clock, expandable experience, portrait viewer, email-copy interaction, and four watch faces showing the visitor's current time.
 - The theme follows the system until the visitor chooses light or dark, then remembers that choice when browser storage is available.
 - Support desktop and mobile layouts and keyboard interaction.
+- Two optional easter eggs reward discovery: wind a watch face, or open a short rally game from the Squash interest. Keep both quiet until activated, with keyboard/touch controls and reduced-motion behavior.
 - Connecting `varunkandula.com` requires the GitHub Pages custom-domain setting and GoDaddy DNS changes by the domain administrator. See `DOMAIN_SETUP.md`.
 
 ## Brand Commitments
