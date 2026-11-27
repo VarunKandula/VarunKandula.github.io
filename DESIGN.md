@@ -147,7 +147,7 @@ The supplied avatar opens a native modal dialog containing `assets/portrait.jpg`
 
 ### Local times and weather
 
-An unboxed list shows SF, Boro, and Hyderabad in three aligned rows of city, local time, and weather. It uses the existing 11.5px monospaced supporting text, 4px row gaps, and 16px static weather icons with the toggle's 1.5-unit strokes. Weather columns reserve space while loading or unavailable; a dash replaces missing or expired data. A small Open-Meteo credit sits beneath the group. Time and date tooltips carry full location and timezone details without adding visual density. Both themes share the same structure, with the entire group moving below identity on mobile.
+An unboxed list shows SF, Boro, and HYD in three aligned rows of city, local time, and weather. It uses the existing 11.5px monospaced supporting text, 4px row gaps, and 16px static weather icons with the toggle's 1.5-unit strokes. Weather columns reserve space while loading or unavailable; a dash replaces missing or expired data. Each weather reading links to Open-Meteo's licence, with attribution in the tooltip and accessible label. Time and date tooltips carry full location and timezone details without adding visual density. Both themes share the same structure, with the entire group moving below identity on mobile.
 
 ### Rows
 

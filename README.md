@@ -15,14 +15,14 @@ Open [localhost:8000](http://localhost:8000).
 - `index.html`: biography, experience, projects, investments, watch captions, and links.
 - `css/styles.css`: layout and light/dark theme tokens.
 - `js/theme.js`: applies the theme before first paint, follows the system until a choice is made, and saves the choice in `localStorage` as `varun-theme`.
-- `js/places.js`: local times for San Francisco, Boro (Hillsborough, NJ), and Hyderabad, plus cached current weather from Open-Meteo.
+- `js/places.js`: local times for SF, Boro (Hillsborough, NJ), and HYD (Hyderabad), plus cached current weather from Open-Meteo.
 - `js/main.js`: live watch faces and winding, email copying, and portrait dialog.
 - `js/squash.js`: the small rally game hidden in the Squash interest tag.
 - `assets/`: the supplied avatar and portrait.
 
 The investment company names and watch reference labels are placeholders from the supplied source. Replace them in `index.html` when the details are ready.
 
-The header's city coordinates and IANA time zones live in `index.html`. Temperatures use Fahrenheit; set `data-temperature-unit="celsius"` on `data-places` for Celsius. Weather comes from one public Open-Meteo request for all three locations, cached for 15 minutes under `varun-weather-v1`. Conditions older than an hour are replaced with a dash; the clocks continue independently. The nearby credit links to the data licence. No API key or visitor geolocation is used.
+The header's city coordinates and IANA time zones live in `index.html`. Temperatures use Fahrenheit; set `data-temperature-unit="celsius"` on `data-places` for Celsius. Weather comes from one public Open-Meteo request for all three locations, cached for 15 minutes under `varun-weather-v1`. Conditions older than an hour are replaced with a dash; the clocks continue independently. Each weather reading links to the data licence and credits Open-Meteo in its tooltip and accessible label. No API key or visitor geolocation is used.
 
 ## Easter eggs
 

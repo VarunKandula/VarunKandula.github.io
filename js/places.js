@@ -68,8 +68,8 @@
       if (!usable(item)) {
         place.icon.replaceChildren();
         place.temperature.textContent = "—";
-        place.weather.setAttribute("aria-label", `${place.name}: weather unavailable`);
-        place.weather.title = "Weather unavailable";
+        place.weather.setAttribute("aria-label", `${place.name}: weather unavailable. Weather data by Open-Meteo.`);
+        place.weather.title = "Weather unavailable · Open-Meteo";
         return;
       }
       const [description, kind] = conditions.get(item.code) || ["Current temperature", "temperature"];
@@ -78,8 +78,8 @@
       place.icon.innerHTML = icons[icon];
       place.icon.dataset.condition = icon;
       place.temperature.textContent = `${temperature}°${fahrenheit ? "F" : "C"}`;
-      place.weather.setAttribute("aria-label", `${place.name}: ${description}, ${temperature} degrees ${fahrenheit ? "Fahrenheit" : "Celsius"}`);
-      place.weather.title = `${description} · Updated ${place.clock.format(new Date(item.time)).toLowerCase()} · Open-Meteo`;
+      place.weather.setAttribute("aria-label", `${place.name}: ${description}, ${temperature} degrees ${fahrenheit ? "Fahrenheit" : "Celsius"}. Weather data by Open-Meteo.`);
+      place.weather.title = `${description} · Updated ${place.clock.format(new Date(item.time)).toLowerCase()} · Weather by Open-Meteo (CC BY 4.0; temperature rounded)`;
     });
   };
 
