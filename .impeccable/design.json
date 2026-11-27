@@ -1,0 +1,353 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-27T17:23:28.401485+00:00",
+  "title": "Design System: Varun Kandula",
+  "extensions": {
+    "colorMeta": {
+      "light-bg": {
+        "role": "neutral",
+        "displayName": "Light Canvas",
+        "tonalRamp": [
+          "oklch(15.00% 0.00132 106.42)",
+          "oklch(26.43% 0.00132 106.42)",
+          "oklch(37.86% 0.00132 106.42)",
+          "oklch(49.29% 0.00132 106.42)",
+          "oklch(60.71% 0.00132 106.42)",
+          "oklch(72.14% 0.00132 106.42)",
+          "oklch(83.57% 0.00132 106.42)",
+          "oklch(95.00% 0.00132 106.42)"
+        ]
+      },
+      "light-fg": {
+        "role": "neutral",
+        "displayName": "Light Ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.00192 106.56)",
+          "oklch(26.43% 0.00192 106.56)",
+          "oklch(37.86% 0.00192 106.56)",
+          "oklch(49.29% 0.00192 106.56)",
+          "oklch(60.71% 0.00192 106.56)",
+          "oklch(72.14% 0.00192 106.56)",
+          "oklch(83.57% 0.00192 106.56)",
+          "oklch(95.00% 0.00192 106.56)"
+        ]
+      },
+      "light-muted": {
+        "role": "neutral",
+        "displayName": "Light Supporting ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.00763 106.65)",
+          "oklch(26.43% 0.00763 106.65)",
+          "oklch(37.86% 0.00763 106.65)",
+          "oklch(49.29% 0.00763 106.65)",
+          "oklch(60.71% 0.00763 106.65)",
+          "oklch(72.14% 0.00763 106.65)",
+          "oklch(83.57% 0.00763 106.65)",
+          "oklch(95.00% 0.00763 106.65)"
+        ]
+      },
+      "light-faint": {
+        "role": "neutral",
+        "displayName": "Light Underline and hover border",
+        "tonalRamp": [
+          "oklch(15.00% 0.00686 106.55)",
+          "oklch(26.43% 0.00686 106.55)",
+          "oklch(37.86% 0.00686 106.55)",
+          "oklch(49.29% 0.00686 106.55)",
+          "oklch(60.71% 0.00686 106.55)",
+          "oklch(72.14% 0.00686 106.55)",
+          "oklch(83.57% 0.00686 106.55)",
+          "oklch(95.00% 0.00686 106.55)"
+        ]
+      },
+      "light-line": {
+        "role": "neutral",
+        "displayName": "Light Divider",
+        "tonalRamp": [
+          "oklch(15.00% 0.00533 106.50)",
+          "oklch(26.43% 0.00533 106.50)",
+          "oklch(37.86% 0.00533 106.50)",
+          "oklch(49.29% 0.00533 106.50)",
+          "oklch(60.71% 0.00533 106.50)",
+          "oklch(72.14% 0.00533 106.50)",
+          "oklch(83.57% 0.00533 106.50)",
+          "oklch(95.00% 0.00533 106.50)"
+        ]
+      },
+      "light-hover": {
+        "role": "neutral",
+        "displayName": "Light Hover fill",
+        "tonalRamp": [
+          "oklch(15.00% 0.00398 106.47)",
+          "oklch(26.43% 0.00398 106.47)",
+          "oklch(37.86% 0.00398 106.47)",
+          "oklch(49.29% 0.00398 106.47)",
+          "oklch(60.71% 0.00398 106.47)",
+          "oklch(72.14% 0.00398 106.47)",
+          "oklch(83.57% 0.00398 106.47)",
+          "oklch(95.00% 0.00398 106.47)"
+        ]
+      },
+      "light-accent": {
+        "role": "primary",
+        "displayName": "Light Terracotta",
+        "tonalRamp": [
+          "oklch(15.00% 0.13554 41.51)",
+          "oklch(26.43% 0.13554 41.51)",
+          "oklch(37.86% 0.13554 41.51)",
+          "oklch(49.29% 0.13554 41.51)",
+          "oklch(60.71% 0.13554 41.51)",
+          "oklch(72.14% 0.13554 41.51)",
+          "oklch(83.57% 0.13554 41.51)",
+          "oklch(95.00% 0.13554 41.51)"
+        ]
+      },
+      "dark-bg": {
+        "role": "neutral",
+        "displayName": "Dark Canvas",
+        "tonalRamp": [
+          "oklch(15.00% 0.00202 106.60)",
+          "oklch(26.43% 0.00202 106.60)",
+          "oklch(37.86% 0.00202 106.60)",
+          "oklch(49.29% 0.00202 106.60)",
+          "oklch(60.71% 0.00202 106.60)",
+          "oklch(72.14% 0.00202 106.60)",
+          "oklch(83.57% 0.00202 106.60)",
+          "oklch(95.00% 0.00202 106.60)"
+        ]
+      },
+      "dark-fg": {
+        "role": "neutral",
+        "displayName": "Dark Ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.00399 106.48)",
+          "oklch(26.43% 0.00399 106.48)",
+          "oklch(37.86% 0.00399 106.48)",
+          "oklch(49.29% 0.00399 106.48)",
+          "oklch(60.71% 0.00399 106.48)",
+          "oklch(72.14% 0.00399 106.48)",
+          "oklch(83.57% 0.00399 106.48)",
+          "oklch(95.00% 0.00399 106.48)"
+        ]
+      },
+      "dark-muted": {
+        "role": "neutral",
+        "displayName": "Dark Supporting ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.00870 106.63)",
+          "oklch(26.43% 0.00870 106.63)",
+          "oklch(37.86% 0.00870 106.63)",
+          "oklch(49.29% 0.00870 106.63)",
+          "oklch(60.71% 0.00870 106.63)",
+          "oklch(72.14% 0.00870 106.63)",
+          "oklch(83.57% 0.00870 106.63)",
+          "oklch(95.00% 0.00870 106.63)"
+        ]
+      },
+      "dark-faint": {
+        "role": "neutral",
+        "displayName": "Dark Underline and hover border",
+        "tonalRamp": [
+          "oklch(15.00% 0.00492 106.62)",
+          "oklch(26.43% 0.00492 106.62)",
+          "oklch(37.86% 0.00492 106.62)",
+          "oklch(49.29% 0.00492 106.62)",
+          "oklch(60.71% 0.00492 106.62)",
+          "oklch(72.14% 0.00492 106.62)",
+          "oklch(83.57% 0.00492 106.62)",
+          "oklch(95.00% 0.00492 106.62)"
+        ]
+      },
+      "dark-line": {
+        "role": "neutral",
+        "displayName": "Dark Divider",
+        "tonalRamp": [
+          "oklch(15.00% 0.00368 106.66)",
+          "oklch(26.43% 0.00368 106.66)",
+          "oklch(37.86% 0.00368 106.66)",
+          "oklch(49.29% 0.00368 106.66)",
+          "oklch(60.71% 0.00368 106.66)",
+          "oklch(72.14% 0.00368 106.66)",
+          "oklch(83.57% 0.00368 106.66)",
+          "oklch(95.00% 0.00368 106.66)"
+        ]
+      },
+      "dark-hover": {
+        "role": "neutral",
+        "displayName": "Dark Hover fill",
+        "tonalRamp": [
+          "oklch(15.00% 0.00192 106.56)",
+          "oklch(26.43% 0.00192 106.56)",
+          "oklch(37.86% 0.00192 106.56)",
+          "oklch(49.29% 0.00192 106.56)",
+          "oklch(60.71% 0.00192 106.56)",
+          "oklch(72.14% 0.00192 106.56)",
+          "oklch(83.57% 0.00192 106.56)",
+          "oklch(95.00% 0.00192 106.56)"
+        ]
+      },
+      "dark-accent": {
+        "role": "primary",
+        "displayName": "Dark Terracotta",
+        "tonalRamp": [
+          "oklch(15.00% 0.12988 41.98)",
+          "oklch(26.43% 0.12988 41.98)",
+          "oklch(37.86% 0.12988 41.98)",
+          "oklch(49.29% 0.12988 41.98)",
+          "oklch(60.71% 0.12988 41.98)",
+          "oklch(72.14% 0.12988 41.98)",
+          "oklch(83.57% 0.12988 41.98)",
+          "oklch(95.00% 0.12988 41.98)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Identity",
+        "purpose": "The personal name."
+      },
+      "body": {
+        "displayName": "Reading",
+        "purpose": "Prose and row descriptions."
+      },
+      "title": {
+        "displayName": "Row titles",
+        "purpose": "Medium-weight names."
+      },
+      "label": {
+        "displayName": "Section headings",
+        "purpose": "Uppercase section headings, not eyebrows."
+      },
+      "metadata": {
+        "displayName": "Metadata",
+        "purpose": "Tabular dates, clock, and feedback."
+      }
+    },
+    "shadows": [
+      {
+        "name": "status-halo",
+        "value": "0 0 0 3px color-mix(in srgb, #3fa86b 18%, transparent)",
+        "purpose": "Clock status decoration only; not elevation."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(0.25, 1, 0.5, 1)",
+        "purpose": "Shared easing."
+      },
+      {
+        "name": "state-transition",
+        "value": "0.2s",
+        "purpose": "Links, controls, tags, and row hover."
+      },
+      {
+        "name": "watch-hover",
+        "value": "0.5s",
+        "purpose": "Watch rotation and scale."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation: none; transition: none",
+        "purpose": "Reduced-motion CSS; watch runtime uses whole-second updates when enabled at initialization."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "single-column",
+        "value": "640px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Theme toggle",
+      "kind": "button",
+      "description": "Circular next-theme control; this preview shows the moon state. Runtime supplies switching, persistence, and action labels.",
+      "html": "<button class=\"ds-toggle\" type=\"button\" aria-label=\"Switch to dark mode\"><svg class=\"ds-moon\" viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\">\n              <path d=\"M20.5 13A8.5 8.5 0 0 1 11 3.5 8.5 8.5 0 1 0 20.5 13Z\" />\n            </svg></button>",
+      "css": ".ds-toggle{font:400 14.5px/1.6 var(--sans,Inter,sans-serif);color:var(--fg,#1a1a19);width:44px;height:44px;padding:0;display:inline-grid;place-items:center;background:none;border:1px solid var(--line,#ebebe7);border-radius:50%;color:var(--muted,#6f6f6a);cursor:pointer;transition:color .2s var(--ease,cubic-bezier(0.25,1,0.5,1)),background .2s var(--ease,cubic-bezier(0.25,1,0.5,1)),border-color .2s var(--ease,cubic-bezier(0.25,1,0.5,1))}.ds-toggle:hover{color:var(--fg,#1a1a19);background:var(--hover,#f3f3f0);border-color:var(--faint,#c9c9c4)}.ds-toggle:focus-visible{outline:1.5px solid var(--accent,#b5552e);outline-offset:3px;border-radius:3px;}@media(prefers-reduced-motion:reduce){[class^=\"ds-\"]{animation:none!important;transition:none!important}}",
+      "refersTo": "theme-toggle"
+    },
+    {
+      "name": "Portrait close",
+      "kind": "button",
+      "description": "The dialog close affordance; runtime positions it 12px from the top and right.",
+      "html": "<button class=\"ds-close\" type=\"button\" aria-label=\"Close portrait\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" aria-hidden=\"true\"><path d=\"m6 6 12 12M6 18 18 6\" /></svg></button>",
+      "css": ".ds-close{font:400 14.5px/1.6 var(--sans,Inter,sans-serif);color:var(--fg,#1a1a19);width:44px;height:44px;padding:0;display:inline-grid;place-items:center;border:1px solid var(--line,#ebebe7);border-radius:50%;background:var(--bg,#fbfbfa);cursor:pointer}.ds-close:hover{background:var(--hover,#f3f3f0)}.ds-close:focus-visible{outline:1.5px solid var(--accent,#b5552e);outline-offset:3px;border-radius:3px;}@media(prefers-reduced-motion:reduce){[class^=\"ds-\"]{animation:none!important;transition:none!important}}",
+      "refersTo": "portrait-close"
+    },
+    {
+      "name": "Interest tag",
+      "kind": "chip",
+      "description": "Informational outlined pill; hover is visual feedback, not selection.",
+      "html": "<ul class=\"ds-tags\"><li>Squash <span>played D1</span></li><li>Boxing</li></ul>",
+      "css": ".ds-tags{font:400 14.5px/1.6 var(--sans,Inter,sans-serif);color:var(--fg,#1a1a19);display:flex;flex-wrap:wrap;gap:6px;list-style:none;margin:0;padding:0}.ds-tags li{padding:3px 10px;border:1px solid var(--line,#ebebe7);border-radius:999px;font-size:13px;transition:border-color .2s var(--ease,cubic-bezier(0.25,1,0.5,1)),background .2s var(--ease,cubic-bezier(0.25,1,0.5,1))}.ds-tags li:hover{border-color:var(--faint,#c9c9c4);background:var(--hover,#f3f3f0)}.ds-tags span{color:var(--muted,#6f6f6a)}.ds-tags span:before{content:\"\u00b7 \"}@media(prefers-reduced-motion:reduce){[class^=\"ds-\"]{animation:none!important;transition:none!important}}",
+      "refersTo": "tag"
+    },
+    {
+      "name": "Experience disclosure",
+      "kind": "custom",
+      "description": "Native details row with aligned dates and a muted expansion.",
+      "html": "<details class=\"ds-row\"><summary><span class=\"ds-main\"><span class=\"ds-title\">Kinect</span><span class=\"ds-sub\">Co-founder &amp; CTO</span></span><span class=\"ds-meta\">2026\u2013</span></summary><p>AI sales reps, dynamic product and landing pages, and generative storefronts for Shopify brands. YC P26.</p></details>",
+      "css": ".ds-row{font:400 14.5px/1.6 var(--sans,Inter,sans-serif);color:var(--fg,#1a1a19);}.ds-row summary{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:6px 10px;margin:0 -10px;cursor:pointer;list-style:none;border-radius:8px;transition:background .2s var(--ease,cubic-bezier(0.25,1,0.5,1))}.ds-row summary::-webkit-details-marker{display:none}.ds-row summary:hover{background:var(--hover,#f3f3f0)}.ds-row summary:focus-visible{outline:1.5px solid var(--accent,#b5552e);outline-offset:3px;border-radius:3px;}.ds-main{display:flex;gap:10px;align-items:baseline;min-width:0;flex-wrap:wrap}.ds-title{font-weight:500;white-space:nowrap}.ds-sub,.ds-meta{color:var(--muted,#6f6f6a)}.ds-meta{font-family:var(--mono,\"JetBrains Mono\",monospace);font-size:11.5px;letter-spacing:0;font-variant-numeric:tabular-nums;white-space:nowrap;flex:none}.ds-row[open] .ds-sub{color:var(--fg,#1a1a19)}.ds-row>p{margin:0;padding:2px 0 12px;color:var(--muted,#6f6f6a);max-width:46ch;animation:ds-drop .35s var(--ease,cubic-bezier(0.25,1,0.5,1))}@keyframes ds-drop{from{transform:translateY(-4px)}to{transform:none}}@media(max-width:640px){.ds-main{flex-direction:column;gap:0}.ds-title{white-space:normal}}@media(prefers-reduced-motion:reduce){[class^=\"ds-\"]{animation:none!important;transition:none!important}}",
+      "refersTo": "experience-summary"
+    },
+    {
+      "name": "Static project row",
+      "kind": "custom",
+      "description": "Stacked project title and subtitle with right-aligned metadata.",
+      "html": "<div class=\"ds-static\"><span class=\"ds-project\"><span class=\"ds-project-title\">AIPath</span><span class=\"ds-project-sub\">A web agent that learns workflows from screen recordings.</span></span><span class=\"ds-project-meta\">2024</span></div>",
+      "css": ".ds-static{font:400 14.5px/1.6 var(--sans,Inter,sans-serif);color:var(--fg,#1a1a19);display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:6px 10px;margin:0 -10px;border-radius:8px}.ds-project{display:flex;flex-direction:column;min-width:0}.ds-project-title{font-weight:500}.ds-project-sub,.ds-project-meta{color:var(--muted,#6f6f6a)}.ds-project-meta{font-family:var(--mono,\"JetBrains Mono\",monospace);font-size:11.5px;letter-spacing:0;font-variant-numeric:tabular-nums;white-space:nowrap;flex:none}@media(prefers-reduced-motion:reduce){[class^=\"ds-\"]{animation:none!important;transition:none!important}}"
+    },
+    {
+      "name": "Contact links",
+      "kind": "nav",
+      "description": "Wrapping text links; Email keeps its mailto fallback in this static preview.",
+      "html": "<ul class=\"ds-links\"><li><a href=\"mailto:varun@trykinect.ai\">Email</a></li><li><a href=\"https://x.com/VarunKand\">X</a></li><li><a href=\"https://www.linkedin.com/in/varunkandula/\">LinkedIn</a></li><li><a href=\"https://github.com/VarunKandula\">GitHub</a></li></ul>",
+      "css": ".ds-links{font:400 14.5px/1.6 var(--sans,Inter,sans-serif);color:var(--fg,#1a1a19);list-style:none;display:flex;flex-wrap:wrap;gap:6px 20px;margin:0 0 14px;padding:0}.ds-links a{color:inherit;text-decoration:underline;text-decoration-color:var(--faint,#c9c9c4);text-decoration-thickness:1px;text-underline-offset:3px;transition:text-decoration-color .2s var(--ease,cubic-bezier(0.25,1,0.5,1)),color .2s var(--ease,cubic-bezier(0.25,1,0.5,1))}.ds-links a:hover{text-decoration-color:currentColor}.ds-links a:focus-visible{outline:1.5px solid var(--accent,#b5552e);outline-offset:3px;border-radius:3px;}@media(prefers-reduced-motion:reduce){[class^=\"ds-\"]{animation:none!important;transition:none!important}}"
+    },
+    {
+      "name": "Dress watch",
+      "kind": "custom",
+      "description": "Exact dress-face geometry with static preview hands; shipped JavaScript drives local time.",
+      "html": "<div class=\"ds-watch\"><svg viewBox=\"0 0 100 100\" role=\"img\" aria-label=\"Dress watch illustration\"><circle cx=\"50\" cy=\"50\" r=\"46\" class=\"ds-case\" stroke-width=\"0.8\"/><line x1=\"50.0000\" y1=\"14.0000\" x2=\"50.0000\" y2=\"9.0000\" class=\"ds-ink-s\" stroke-width=\"0.9\" stroke-linecap=\"round\"/><line x1=\"68.0000\" y1=\"18.8231\" x2=\"69.5000\" y2=\"16.2250\" class=\"ds-ink-s\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"81.1769\" y1=\"32.0000\" x2=\"83.7750\" y2=\"30.5000\" class=\"ds-ink-s\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"86.0000\" y1=\"50.0000\" x2=\"91.0000\" y2=\"50.0000\" class=\"ds-ink-s\" stroke-width=\"0.9\" stroke-linecap=\"round\"/><line x1=\"81.1769\" y1=\"68.0000\" x2=\"83.7750\" y2=\"69.5000\" class=\"ds-ink-s\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"68.0000\" y1=\"81.1769\" x2=\"69.5000\" y2=\"83.7750\" class=\"ds-ink-s\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"50.0000\" y1=\"86.0000\" x2=\"50.0000\" y2=\"91.0000\" class=\"ds-ink-s\" stroke-width=\"0.9\" stroke-linecap=\"round\"/><line x1=\"32.0000\" y1=\"81.1769\" x2=\"30.5000\" y2=\"83.7750\" class=\"ds-ink-s\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"18.8231\" y1=\"68.0000\" x2=\"16.2250\" y2=\"69.5000\" class=\"ds-ink-s\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"14.0000\" y1=\"50.0000\" x2=\"9.0000\" y2=\"50.0000\" class=\"ds-ink-s\" stroke-width=\"0.9\" stroke-linecap=\"round\"/><line x1=\"18.8231\" y1=\"32.0000\" x2=\"16.2250\" y2=\"30.5000\" class=\"ds-ink-s\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"32.0000\" y1=\"18.8231\" x2=\"30.5000\" y2=\"16.2250\" class=\"ds-ink-s\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"50\" y=\"34\" text-anchor=\"middle\" class=\"ds-mute\" font-size=\"4.2\" font-family=\"Instrument Serif, serif\" letter-spacing=\"0.6\">V K</text><rect x=\"49.2\" y=\"30\" width=\"1.6\" height=\"25\" rx=\"0.8\" class=\"ds-ink\" transform=\"rotate(305 50 50)\"/><rect x=\"49.5\" y=\"18\" width=\"1\" height=\"37\" rx=\"0.5\" class=\"ds-ink\" transform=\"rotate(60 50 50)\"/><circle cx=\"50\" cy=\"50\" r=\"1.8\" class=\"ds-ink\"/></svg><div class=\"ds-caption\"><b>Dress</b><span>Reference</span><span>Weddings, dinners</span></div></div>",
+      "css": ".ds-watch{font:400 14.5px/1.6 var(--sans,Inter,sans-serif);color:var(--fg,#1a1a19);display:flex;flex-direction:column;gap:10px}.ds-watch svg{width:100%;height:auto;display:block;overflow:visible;transition:transform .5s var(--ease,cubic-bezier(0.25,1,0.5,1))}.ds-watch:hover svg{transform:rotate(-4deg) scale(1.04)}.ds-case{fill:var(--bg,#fbfbfa);stroke:var(--fg,#1a1a19)}.ds-ink{fill:var(--fg,#1a1a19)}.ds-ink-s{stroke:var(--fg,#1a1a19)}.ds-mute{fill:var(--muted,#6f6f6a)}.ds-caption{display:flex;flex-direction:column;line-height:1.35}.ds-caption b{font-weight:500}.ds-caption span{font-size:12.5px;color:var(--muted,#6f6f6a)}@media(prefers-reduced-motion:reduce){[class^=\"ds-\"]{animation:none!important;transition:none!important}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "A quiet personal portfolio",
+    "overview": "The supplied Devin source and screenshot are the visual authority. The shipped site pairs a narrow reading column, fine section rules, understated metadata, supplied photography, and four drawn watch faces. This record describes that implementation rather than proposing a new identity.",
+    "keyCharacteristics": [
+      "Warm off-white and charcoal themes with restrained terracotta details.",
+      "Serif identity, compact sans-serif prose, and monospaced labels and dates.",
+      "Open sections and rows, with live SVG watches as the signature illustration."
+    ],
+    "rules": [
+      {
+        "name": "The Paired Theme Rule",
+        "body": "Change semantic roles together; retain the same hierarchy and geometry in both themes.",
+        "section": "colors"
+      },
+      {
+        "name": "The Three Voices Rule",
+        "body": "Keep identity in serif, reading text in sans, and short labels or measurements in mono.",
+        "section": "typography"
+      },
+      {
+        "name": "The Open Surface Rule",
+        "body": "Preserve section rules and unboxed content as the page's structure.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** preserve the supplied typography, photography, thin rules, and watch geometry.",
+      "**Do** use paired theme roles and visible keyboard focus.",
+      "**Do** keep native disclosures, readable captions, and responsive row wrapping."
+    ],
+    "donts": [
+      "**Don't** turn the open sections into a dashboard of cards.",
+      "**Don't** promote the clock's green status decoration into a general action color.",
+      "**Don't** treat supplied investment and watch-reference placeholders as reusable copy rules."
+    ]
+  }
+}
