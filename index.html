@@ -201,7 +201,7 @@
       <section class="block rise" id="interests" style="--d: 6">
         <h2 class="label mono">Interests</h2>
         <ul class="tags">
-          <li>Squash <span>played D1</span></li>
+          <li data-squash-trigger>Squash <span>played D1</span></li>
           <li>Boxing</li>
           <li>Golf <span>working on it</span></li>
           <li>Photography</li>
@@ -234,6 +234,35 @@
       <img src="assets/portrait.jpg" alt="Varun Kandula at UC Berkeley" width="599" height="900" loading="lazy" />
     </dialog>
 
+    <dialog class="squash-dialog" data-squash-dialog aria-labelledby="squash-title" aria-describedby="squash-help">
+      <div class="squash-heading">
+        <h2 id="squash-title">One more rally.</h2>
+        <button class="squash-close" type="button" data-squash-close aria-label="Close squash game">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6" /></svg>
+        </button>
+      </div>
+      <p class="muted squash-message" data-squash-status role="status">You found the squash court.</p>
+      <div class="squash-scoreboard mono">
+        <span>rally <b data-squash-score>00</b></span>
+        <span>best <b data-squash-best>00</b></span>
+      </div>
+      <div class="squash-court" data-squash-court tabindex="0" role="application" aria-label="Squash game" aria-describedby="squash-help">
+        <svg viewBox="0 0 400 340" aria-hidden="true">
+          <rect class="court-floor" x="18" y="18" width="364" height="304" />
+          <path class="court-lines" d="M18 190H382M200 190V322M18 256H90V190M382 256H310V190" />
+          <path class="court-front" d="M18 18H382" />
+          <text class="court-label" x="200" y="42" text-anchor="middle">front wall</text>
+          <rect class="squash-racket" data-squash-racket x="-36" y="-3" width="72" height="6" rx="3" transform="translate(200 292)" />
+          <circle class="squash-ball" data-squash-ball cx="200" cy="250" r="5" />
+        </svg>
+      </div>
+      <div class="squash-controls">
+        <p id="squash-help" class="muted">Mouse, drag, or ← → to move.<br />Space to serve or pause.</p>
+        <button class="squash-play mono" type="button" data-squash-play autofocus>Serve</button>
+      </div>
+    </dialog>
+
     <script src="js/main.js" defer></script>
+    <script src="js/squash.js" defer></script>
   </body>
 </html>

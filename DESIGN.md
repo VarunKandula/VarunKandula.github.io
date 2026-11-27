@@ -151,13 +151,19 @@ Experience uses native details/summary with hidden default markers. Summary padd
 
 ### Tags and links
 
-Tags are informational outlined pills with optional muted text after a middle dot; hover changes border and fill, with no selected state. Links inherit text color and use a faint 1px underline offset 3px, becoming current-color on hover. Contact links wrap with 6px/20px gaps. Email copies the address and displays an inverted, polite live-status toast for 1.8 seconds; mailto remains the fallback.
+Tags are outlined pills with optional muted text after a middle dot; hover changes border and fill, with no selected state. The Squash tag progressively becomes a button that opens a small rally game; the others remain informational. Links inherit text color and use a faint 1px underline offset 3px, becoming current-color on hover. Contact links wrap with 6px/20px gaps. Email copies the address and displays an inverted, polite live-status toast for 1.8 seconds; mailto remains the fallback.
 
 ### Live watches and motion
 
 Diver, dress, field, and chronograph faces are generated as inline SVG in 100-by-100 viewboxes. Cases use canvas fill and foreground strokes; tick marks mix foreground and muted ink; terracotta marks select hands and details. They show the visitor's local time, independently of the San Francisco header clock. Captions exist in HTML even without JavaScript.
 
-The shared easing is `cubic-bezier(0.25, 1, 0.5, 1)`. State changes generally take 0.2s; avatar hover rotates/scales over 0.4s, watches over 0.5s. Disclosure, portrait, and entry motion use small translations/scales; entry motion never hides content. Reduced-motion CSS disables animations and transitions; watches update in whole-second steps when reduced motion is active at initialization. Sidecar watch previews are static illustrations, not runtime clocks.
+Each watch face is a native button. Activating it winds the hands through full rotations over 1.2 seconds and returns to actual time, with a short "Time well wasted." toast. Reduced motion skips the winding; watch updates stop offscreen and when the document is hidden.
+
+The shared easing is `cubic-bezier(0.25, 1, 0.5, 1)`. State changes generally take 0.2s; avatar hover rotates/scales over 0.4s, watches over 0.5s. Disclosure, portrait, and entry motion use small translations/scales; entry motion never hides content. Reduced-motion CSS disables animations and transitions; watches update in whole-second steps and respond to live preference changes. Sidecar watch previews are static illustrations, not runtime clocks.
+
+### Squash break
+
+A native dialog provides protected keyboard focus for the optional game. It uses the existing serif display face, monospaced rally counters, warm canvas, thin court markings, and terracotta front wall and ball. The court is a responsive SVG with mouse, pointer, and arrow-key controls. Play starts only after Serve; pause, resume, replay, Escape, backdrop dismissal, and focus restoration remain explicit. The game pauses when the window loses focus or the document becomes hidden. Reduced motion selects a slower pace for the user-initiated game. Both themes share the same geometry.
 
 ## Do's and Don'ts
 
