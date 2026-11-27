@@ -117,11 +117,11 @@ The ramp is compact rather than modular: display, body, and small metadata. Row 
 
 ## Layout
 
-The centered page has a maximum outer width of 680px, including 24px side padding. Desktop page padding is 96px top and 120px bottom. The header uses a horizontal identity/tools arrangement with 72px below it.
+The centered page has a maximum outer width of 680px, including 24px side padding. Desktop page padding is 96px top and 120px bottom. The header uses a horizontal identity/tools arrangement with 28px below it.
 
 Sections have a 132px label column, a flexible content column, a 24px gap, 28px vertical padding, and a 1px top rule. Paragraphs separate by 14px. Rows keep dates at the right; side-project descriptions always stack below titles. Four watches share equal columns with 20px vertical and 16px horizontal gaps.
 
-At widths up to and including 640px, page padding becomes 56px 20px 96px. Header spacing becomes 48px; the complete three-city clock group moves below identity and toggle. Sections become one column with a 12px gap and 24px vertical padding. Row descriptions stack, titles wrap, and watches become two columns with 24px vertical and 20px horizontal gaps. Tags and contact links wrap naturally.
+At widths up to and including 640px, page padding becomes 56px 20px 96px. Header spacing becomes 24px; the complete three-city clock group moves below identity and toggle. Sections become one column with a 12px gap and 24px vertical padding. Row descriptions stack, titles wrap, and watches become two columns with 24px vertical and 20px horizontal gaps. Tags and contact links wrap naturally.
 
 ## Elevation & Depth
 
