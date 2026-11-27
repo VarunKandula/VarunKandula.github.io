@@ -117,11 +117,11 @@ The ramp is compact rather than modular: display, body, and small metadata. Row 
 
 ## Layout
 
-The centered page has a maximum outer width of 680px, including 24px side padding. Desktop page padding is 96px top and 120px bottom. The header uses a horizontal identity/tools arrangement with 72px below it.
+The centered page has a maximum outer width of 680px, including 24px side padding. Desktop page padding is 96px top and 120px bottom. The header uses a horizontal identity/tools arrangement with 28px below it, followed by the Home / AIPath navigation and a 12px gap before the first section.
 
 Sections have a 132px label column, a flexible content column, a 24px gap, 28px vertical padding, and a 1px top rule. Paragraphs separate by 14px. Rows keep dates at the right; side-project descriptions always stack below titles. Four watches share equal columns with 20px vertical and 16px horizontal gaps.
 
-At widths up to and including 640px, page padding becomes 56px 20px 96px. Header spacing becomes 48px; the complete three-city clock group moves below identity and toggle. Sections become one column with a 12px gap and 24px vertical padding. Row descriptions stack, titles wrap, and watches become two columns with 24px vertical and 20px horizontal gaps. Tags and contact links wrap naturally.
+At widths up to and including 640px, page padding becomes 56px 20px 96px. Header spacing becomes 16px before the navigation; the complete three-city clock group moves below identity and toggle. Sections become one column with a 12px gap and 24px vertical padding. Row descriptions stack, titles wrap, and watches become two columns with 24px vertical and 20px horizontal gaps. Tags and contact links wrap naturally.
 
 ## Elevation & Depth
 
@@ -134,6 +134,10 @@ Sections and rows remain flat; thin rules and hover fills provide separation. Th
 Rows have gently rounded hover surfaces; tags and toast use pill shapes. Avatar and icon controls are circular. The avatar crops the supplied image to 40px square; the portrait uses 14px corners and keeps the photograph's aspect ratio. Icons are inline SVG strokes (18px artwork, 1.5-unit stroke), not text glyphs.
 
 ## Components
+
+### Site navigation and project notes
+
+Home and AIPath are ordinary page links styled as tabs, with a 2px foreground underline and `aria-current="page"` identifying the active page. Shared styles live in `css/site-tabs.css`: 44px minimum link height, 24px gaps, and 12px monospaced labels. At 440px and below, the gap becomes 20px and labels become 11px. The AIPath project note at `/aipath/` uses the same tabs and saved theme. Its research-paper composition is documented separately in `aipath/DESIGN.md`.
 
 ### Theme and portrait controls
 

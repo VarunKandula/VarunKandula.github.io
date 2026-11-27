@@ -18,7 +18,8 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css?v=6e0603cdd2" />
+    <link rel="stylesheet" href="css/site-tabs.css?v=9f061b90a1" />
   </head>
   <body>
     <main class="page">
@@ -72,6 +73,11 @@
           </button>
         </div>
       </header>
+
+      <nav class="site-tabs portfolio-tabs" aria-label="Site navigation">
+        <a href="./" aria-current="page">Home</a>
+        <a href="aipath/">AIPath</a>
+      </nav>
 
       <section class="block rise" id="about" style="--d: 1">
         <h2 class="label mono">About</h2>
@@ -175,7 +181,7 @@
             <span class="row-meta mono">—</span>
           </li>
           <li class="row-static">
-            <span class="row-main"><span class="row-title">AIPath</span><span class="row-sub">A web agent that learns workflows from screen recordings.</span></span>
+            <span class="row-main"><a class="row-title" href="aipath/">AIPath</a><span class="row-sub">A web agent that learns workflows from screen recordings.</span></span>
             <span class="row-meta mono">2024</span>
           </li>
         </ol>

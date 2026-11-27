@@ -13,6 +13,7 @@ Varun Kandula's personal website, rebuilt from his supplied Devin export and scr
 ## Capabilities and Constraints
 
 - A static HTML, CSS, and JavaScript site with no build step. The existing GitHub Pages configuration publishes the root of `main`.
+- `/aipath/` documents the 2024 AIPath prototype in the user's requested research-paper style: a readable technical note, simple diagrams, implementation details, and links to the original repositories. Shared Home / AIPath tabs connect the pages, with the active page indicated visually and to assistive technology. The project-list link remains, and both pages share the remembered theme.
 - Preserve the supplied biography, experience, side projects, investing section, watches, interests, contact links, and photography.
 - Keep expandable experience, the portrait viewer, email-copy interaction, and four watch faces showing the visitor's current time.
 - The header shows local times for SF, Boro (Hillsborough, New Jersey), and HYD (Hyderabad, India), with subtle current-weather icons and temperatures in Fahrenheit. Time remains available independently of the weather provider.
@@ -30,3 +31,5 @@ The user-provided screenshot and source are the visual and editorial authority. 
 The original handoff is in `.context/attachments/4OVCkk/varun-site.zip` and `.context/attachments/fcTKWZ/image.png` in the originating workspace. The restored source and images are tracked in this repository.
 
 Investment company names/descriptions and watch reference labels remain the placeholders supplied in the source. Actual investment details and watch references are not provided; do not invent them.
+
+AIPath's project description is grounded in `https://github.com/agamg/pareto` and `https://github.com/rahul7932/pear-backend`. Its illustrative request is labeled as such. Do not present resume metrics, RLHF, proposed customer use cases, or production reliability as verified results.

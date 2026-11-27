@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AIPath — Learning web workflows from demonstration</title>
+    <meta name="description" content="A technical look at AIPath, a 2024 prototype that turns narrated screen recordings into reusable context for browser agents." />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#fbfbfa" />
+    <link rel="canonical" href="https://varunkandula.com/aipath/" />
+    <meta property="og:title" content="AIPath — Learning web workflows from demonstration" />
+    <meta property="og:description" content="Record a workflow. Recover the steps. Give a browser agent a worked example." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://varunkandula.com/aipath/" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbfbfa'/%3E%3Cpath d='M6 25 16 5l10 20M10 18h12' fill='none' stroke='%231a1a19' stroke-width='2'/%3E%3C/svg%3E" />
+    <script src="../js/theme.js"></script>
+    <link rel="stylesheet" href="styles.css?v=300d898f1e" />
+    <link rel="stylesheet" href="../css/site-tabs.css?v=9f061b90a1" />
+  </head>
+  <body>
+    <!--
+    THESIS: A browser agent learns a procedure from a worked example. Present the mechanism as a research note, with source code as the proof.
+    OWN-WORLD: The portfolio's off-white and charcoal, serif reading text, mono notation, square diagrams, fine rules, restrained blue links.
+    STORY: Read the abstract, follow the pipeline, inspect an example request, then open the implementation.
+    FIRST VIEWPORT: Home / AIPath tabs above a centered two-line title, attribution, source links, a narrow abstract, and a three-stage diagram.
+    FORM: User-pinned research-paper structure; code-led extension of the established site. Native disclosure is the signature interaction; no decorative motion. No concept draw for the specified form.
+    FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+    -->
+    <a class="skip-link" href="#main">Skip to the paper</a>
+
+    <header class="masthead" id="top">
+      <nav class="site-tabs" aria-label="Site navigation">
+        <a href="../">Home</a>
+        <a href="./" aria-current="page">AIPath</a>
+      </nav>
+      <nav class="site-nav" aria-label="Paper navigation">
+        <a href="#method">Method</a>
+        <a href="#implementation">Implementation</a>
+        <a href="https://github.com/agamg/pareto">GitHub</a>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode" title="Switch to dark mode" hidden>
+          <svg class="theme-moon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20.5 13A8.5 8.5 0 0 1 11 3.5 8.5 8.5 0 1 0 20.5 13Z" />
+          </svg>
+          <svg class="theme-sun" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" />
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <main class="paper" id="main">
+      <article aria-labelledby="paper-title">
+        <header class="paper-header">
+          <h1 id="paper-title">Learning web workflows<br class="title-break" /> from demonstration</h1>
+          <p class="byline"><a href="../">Varun Kandula</a> &amp; collaborators</p>
+          <p class="publication-meta"><time datetime="2024-10">October 2024</time><span aria-hidden="true"> / </span>Experimental prototype</p>
+          <div class="paper-links" aria-label="Project source code">
+            <a href="https://github.com/agamg/pareto">[ Project &amp; interface ]</a>
+            <a href="https://github.com/rahul7932/pear-backend">[ Agent backend ]</a>
+          </div>
+        </header>
+
+        <section class="abstract reading-width" aria-labelledby="abstract-title">
+          <h2 id="abstract-title">Abstract</h2>
+          <p>Can a browser agent learn a workflow by watching someone do it? AIPath explores this through narrated screen recordings: visual observations and spoken explanations become reusable workflow context. Given that context and a new instruction, an agent can plan a related task and act in the browser. The prototype connects a recording interface, a workflow library, and an agent executor.</p>
+        </section>
+
+        <figure class="pipeline" aria-labelledby="pipeline-caption">
+          <div class="pipeline-flow">
+            <div class="pipeline-stage">
+              <svg class="stage-drawing" viewBox="0 0 76 48" width="76" height="48" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+                <rect x="9" y="5" width="51" height="34" rx="1" />
+                <path d="M9 13h51M17 20h19m-19 6h26m-26 6h16M60 19h7v25H19v-5" />
+                <circle cx="14" cy="9" r=".6" fill="currentColor" stroke="none" />
+                <circle cx="18" cy="9" r=".6" fill="currentColor" stroke="none" />
+              </svg>
+              <h3>Demonstration</h3>
+              <p>Screen recording + narration</p>
+              <span class="stage-notation">video, audio</span>
+            </div>
+            <svg class="pipeline-arrow" viewBox="0 0 52 24" width="52" height="24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M3 12h44m-5-5 5 5-5 5" /></svg>
+            <div class="pipeline-stage">
+              <svg class="stage-drawing" viewBox="0 0 76 48" width="76" height="48" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+                <path d="M19 4H9v40h10m38-40h10v40H57M23 12h30M23 24h22M23 36h30" />
+                <circle cx="17" cy="12" r="1" fill="currentColor" stroke="none" />
+                <circle cx="17" cy="24" r="1" fill="currentColor" stroke="none" />
+                <circle cx="17" cy="36" r="1" fill="currentColor" stroke="none" />
+              </svg>
+              <h3>Reusable plan</h3>
+              <p>Ordered steps with context</p>
+              <span class="stage-notation">trace</span>
+            </div>
+            <svg class="pipeline-arrow" viewBox="0 0 52 24" width="52" height="24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M3 12h44m-5-5 5 5-5 5" /></svg>
+            <div class="pipeline-stage">
+              <svg class="stage-drawing" viewBox="0 0 76 48" width="76" height="48" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true">
+                <rect x="8" y="5" width="60" height="38" rx="1" />
+                <path d="M8 13h60M16 21h23m-23 6h14M47 22v15l4-5 6-1-10-9Z" />
+                <circle cx="13" cy="9" r=".6" fill="currentColor" stroke="none" />
+                <circle cx="17" cy="9" r=".6" fill="currentColor" stroke="none" />
+              </svg>
+              <h3>Browser execution</h3>
+              <p>The plan + a new instruction</p>
+              <span class="stage-notation">trace, hint, url</span>
+            </div>
+          </div>
+          <figcaption id="pipeline-caption"><span class="figure-number">Figure 1.</span> A demonstration supplies the procedure. A new instruction supplies the next objective.</figcaption>
+        </figure>
+
+        <div class="reading-width">
+          <section class="paper-section" id="method" aria-labelledby="method-title">
+            <h2 id="method-title"><span class="section-number">1</span> Method</h2>
+            <p>A demonstration contains both a sequence of actions and the reason for taking them. AIPath keeps these together as a <em>reproducible action plan</em> (RAP), giving the browser agent a worked example to draw from.</p>
+
+            <div class="method-step">
+              <h3><span class="subsection-number">1.1</span> Capture a worked example</h3>
+              <p>The interface records the screen and microphone. In the Python pipeline, FFmpeg separates the audio and samples video frames so the workflow can be inspected as a sequence of observations.</p>
+            </div>
+            <div class="method-step">
+              <h3><span class="subsection-number">1.2</span> Recover the workflow context</h3>
+              <p>GPT-4o summarizes screenshots and identifies screen changes. Whisper transcribes the narration. The pipeline combines visual summaries, time intervals, and spoken context into a structured representation of the demonstration.</p>
+            </div>
+            <div class="method-step">
+              <h3><span class="subsection-number">1.3</span> Adapt and execute</h3>
+              <p>A saved trace, a new task hint, and a starting URL become the next run’s inputs. GPT-4 derives the objective and action context; a LaVague agent then uses Selenium to interact with the browser. The prompt allows the agent to adjust its steps to the new objective.</p>
+            </div>
+
+            <aside class="worked-example" aria-labelledby="example-title">
+              <h3 id="example-title">A small example</h3>
+              <dl class="example-tasks">
+                <div><dt>Demonstration</dt><dd>Find a project’s installation instructions.</dd></div>
+                <div><dt>New instruction</dt><dd>Find its API reference instead.</dd></div>
+              </dl>
+              <p>The useful context is how to navigate the documentation. The destination changes with the task.</p>
+              <details class="trace-disclosure">
+                <summary><span>Inspect the request</span><span class="code-language" aria-hidden="true">JSON</span></summary>
+                <div class="trace-content">
+                  <p class="example-note">Illustrative input to <code>/run_workflow</code>; not a recorded execution.</p>
+                  <pre tabindex="0" aria-label="Illustrative workflow request"><code>{
+  "url": "https://example.com",
+  "hint": "Find the API reference instead.",
+  "trace": {
+    "objective": "Find installation instructions",
+    "steps": [
+      "Open the documentation",
+      "Find the getting-started section",
+      "Read the installation instructions"
+    ]
+  }
+}</code></pre>
+                </div>
+              </details>
+            </aside>
+          </section>
+
+          <section class="paper-section" id="implementation" aria-labelledby="implementation-title">
+            <h2 id="implementation-title"><span class="section-number">2</span> Implementation</h2>
+            <p>The prototype is split between a web interface and a Python agent service. The original code is available in two repositories.<a class="citation" href="#ref-1" aria-label="Reference 1, project and interface">[1]</a><a class="citation" href="#ref-2" aria-label="Reference 2, agent backend">[2]</a></p>
+            <table class="implementation-table">
+              <caption class="visually-hidden">Components and technologies in the original prototype</caption>
+              <thead><tr><th scope="col">Component</th><th scope="col">Implementation</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Recorder &amp; interface</th><td>Next.js, React, TypeScript<br /><span class="table-note">Browser screen and microphone capture</span></td></tr>
+                <tr><th scope="row">Workflow library</th><td>Supabase<br /><span class="table-note">Workflow records and storage helpers</span></td></tr>
+                <tr><th scope="row">Video interpretation</th><td>FFmpeg, GPT-4o, Whisper<br /><span class="table-note">Frames, visual summaries, and transcripts</span></td></tr>
+                <tr><th scope="row">Planning &amp; execution</th><td>GPT-4, LaVague, Selenium<br /><span class="table-note">Task context and browser interaction</span></td></tr>
+                <tr><th scope="row">API</th><td>Python, FastAPI<br /><span class="table-note">Workflow creation and execution endpoints</span></td></tr>
+              </tbody>
+            </table>
+            <p class="implementation-note">“Learning” here means retaining and reusing demonstration context. The inspected implementation calls pretrained models to interpret and execute the workflow.</p>
+          </section>
+
+          <section class="paper-section" id="discussion" aria-labelledby="discussion-title">
+            <h2 id="discussion-title"><span class="section-number">3</span> Open questions</h2>
+            <p>The broader idea was a reusable library of workflows and actions for web agents. A useful next evaluation would ask how well those plans transfer: to a new task, to a changed interface, or to a step that needs recovery.</p>
+            <p>The repositories preserve an experimental implementation from 2024. This note describes its approach and components; it does not report a measured success rate.</p>
+          </section>
+
+          <section class="paper-section references" id="references" aria-labelledby="references-title">
+            <h2 id="references-title">References &amp; source</h2>
+            <ol>
+              <li id="ref-1"><span class="reference-number">[1]</span><div><a href="https://github.com/agamg/pareto">AIPath: project overview &amp; interface</a><span class="repo-path">github.com/agamg/pareto</span></div></li>
+              <li id="ref-2"><span class="reference-number">[2]</span><div><a href="https://github.com/rahul7932/pear-backend">Video processing &amp; browser agent</a><span class="repo-path">github.com/rahul7932/pear-backend</span></div></li>
+            </ol>
+          </section>
+        </div>
+      </article>
+    </main>
+
+    <footer class="page-footer">
+      <a href="../">Back to Varun’s site</a>
+      <span>AIPath / Project archive / 2024</span>
+      <a href="#top">Back to top</a>
+    </footer>
+  </body>
+</html>

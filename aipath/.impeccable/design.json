@@ -1,0 +1,293 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-27T19:01:19.610400+00:00",
+  "title": "Design System: AIPath Project Note",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "tonalRamp": [
+          "oklch(15% 0.00132 106.42)",
+          "oklch(26.43% 0.00132 106.42)",
+          "oklch(37.86% 0.00132 106.42)",
+          "oklch(49.29% 0.00132 106.42)",
+          "oklch(60.71% 0.00132 106.42)",
+          "oklch(72.14% 0.00132 106.42)",
+          "oklch(83.57% 0.00132 106.42)",
+          "oklch(95% 0.00132 106.42)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "oklch(15% 0.00192 106.56)",
+          "oklch(26.43% 0.00192 106.56)",
+          "oklch(37.86% 0.00192 106.56)",
+          "oklch(49.29% 0.00192 106.56)",
+          "oklch(60.71% 0.00192 106.56)",
+          "oklch(72.14% 0.00192 106.56)",
+          "oklch(83.57% 0.00192 106.56)",
+          "oklch(95% 0.00192 106.56)"
+        ]
+      },
+      "secondary": {
+        "role": "neutral",
+        "displayName": "Secondary",
+        "tonalRamp": [
+          "oklch(15% 0.00625 106.63)",
+          "oklch(26.43% 0.00625 106.63)",
+          "oklch(37.86% 0.00625 106.63)",
+          "oklch(49.29% 0.00625 106.63)",
+          "oklch(60.71% 0.00625 106.63)",
+          "oklch(72.14% 0.00625 106.63)",
+          "oklch(83.57% 0.00625 106.63)",
+          "oklch(95% 0.00625 106.63)"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Rule",
+        "tonalRamp": [
+          "oklch(15% 0.00812 106.57)",
+          "oklch(26.43% 0.00812 106.57)",
+          "oklch(37.86% 0.00812 106.57)",
+          "oklch(49.29% 0.00812 106.57)",
+          "oklch(60.71% 0.00812 106.57)",
+          "oklch(72.14% 0.00812 106.57)",
+          "oklch(83.57% 0.00812 106.57)",
+          "oklch(95% 0.00812 106.57)"
+        ]
+      },
+      "subtle": {
+        "role": "neutral",
+        "displayName": "Subtle",
+        "tonalRamp": [
+          "oklch(15% 0.00398 106.47)",
+          "oklch(26.43% 0.00398 106.47)",
+          "oklch(37.86% 0.00398 106.47)",
+          "oklch(49.29% 0.00398 106.47)",
+          "oklch(60.71% 0.00398 106.47)",
+          "oklch(72.14% 0.00398 106.47)",
+          "oklch(83.57% 0.00398 106.47)",
+          "oklch(95% 0.00398 106.47)"
+        ]
+      },
+      "link": {
+        "role": "primary",
+        "displayName": "Link",
+        "tonalRamp": [
+          "oklch(15% 0.10285 260.91)",
+          "oklch(26.43% 0.10285 260.91)",
+          "oklch(37.86% 0.10285 260.91)",
+          "oklch(49.29% 0.10285 260.91)",
+          "oklch(60.71% 0.10285 260.91)",
+          "oklch(72.14% 0.10285 260.91)",
+          "oklch(83.57% 0.10285 260.91)",
+          "oklch(95% 0.10285 260.91)"
+        ]
+      },
+      "paper-dark": {
+        "role": "neutral",
+        "displayName": "Paper Dark",
+        "tonalRamp": [
+          "oklch(15% 0.00202 106.60)",
+          "oklch(26.43% 0.00202 106.60)",
+          "oklch(37.86% 0.00202 106.60)",
+          "oklch(49.29% 0.00202 106.60)",
+          "oklch(60.71% 0.00202 106.60)",
+          "oklch(72.14% 0.00202 106.60)",
+          "oklch(83.57% 0.00202 106.60)",
+          "oklch(95% 0.00202 106.60)"
+        ]
+      },
+      "ink-dark": {
+        "role": "neutral",
+        "displayName": "Ink Dark",
+        "tonalRamp": [
+          "oklch(15% 0.00399 106.48)",
+          "oklch(26.43% 0.00399 106.48)",
+          "oklch(37.86% 0.00399 106.48)",
+          "oklch(49.29% 0.00399 106.48)",
+          "oklch(60.71% 0.00399 106.48)",
+          "oklch(72.14% 0.00399 106.48)",
+          "oklch(83.57% 0.00399 106.48)",
+          "oklch(95% 0.00399 106.48)"
+        ]
+      },
+      "secondary-dark": {
+        "role": "neutral",
+        "displayName": "Secondary Dark",
+        "tonalRamp": [
+          "oklch(15% 0.01127 106.67)",
+          "oklch(26.43% 0.01127 106.67)",
+          "oklch(37.86% 0.01127 106.67)",
+          "oklch(49.29% 0.01127 106.67)",
+          "oklch(60.71% 0.01127 106.67)",
+          "oklch(72.14% 0.01127 106.67)",
+          "oklch(83.57% 0.01127 106.67)",
+          "oklch(95% 0.01127 106.67)"
+        ]
+      },
+      "rule-dark": {
+        "role": "neutral",
+        "displayName": "Rule Dark",
+        "tonalRamp": [
+          "oklch(15% 0.00843 106.82)",
+          "oklch(26.43% 0.00843 106.82)",
+          "oklch(37.86% 0.00843 106.82)",
+          "oklch(49.29% 0.00843 106.82)",
+          "oklch(60.71% 0.00843 106.82)",
+          "oklch(72.14% 0.00843 106.82)",
+          "oklch(83.57% 0.00843 106.82)",
+          "oklch(95% 0.00843 106.82)"
+        ]
+      },
+      "subtle-dark": {
+        "role": "neutral",
+        "displayName": "Subtle Dark",
+        "tonalRamp": [
+          "oklch(15% 0.00381 106.71)",
+          "oklch(26.43% 0.00381 106.71)",
+          "oklch(37.86% 0.00381 106.71)",
+          "oklch(49.29% 0.00381 106.71)",
+          "oklch(60.71% 0.00381 106.71)",
+          "oklch(72.14% 0.00381 106.71)",
+          "oklch(83.57% 0.00381 106.71)",
+          "oklch(95% 0.00381 106.71)"
+        ]
+      },
+      "link-dark": {
+        "role": "primary",
+        "displayName": "Link Dark",
+        "tonalRamp": [
+          "oklch(15% 0.06903 260.87)",
+          "oklch(26.43% 0.06903 260.87)",
+          "oklch(37.86% 0.06903 260.87)",
+          "oklch(49.29% 0.06903 260.87)",
+          "oklch(60.71% 0.06903 260.87)",
+          "oklch(72.14% 0.06903 260.87)",
+          "oklch(83.57% 0.06903 260.87)",
+          "oklch(95% 0.06903 260.87)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "body": {
+        "displayName": "Reading text",
+        "purpose": "Serif explanations in the narrow reading column."
+      },
+      "headline": {
+        "displayName": "Section heading",
+        "purpose": "Numbered technical sections."
+      },
+      "title": {
+        "displayName": "Method heading",
+        "purpose": "Repeated method subheadings."
+      },
+      "label": {
+        "displayName": "Technical metadata",
+        "purpose": "Publication metadata and example labels."
+      },
+      "interface": {
+        "displayName": "Compact interface",
+        "purpose": "Disclosure controls and supporting notes."
+      }
+    },
+    "shadows": [],
+    "motion": [],
+    "breakpoints": [
+      {
+        "name": "outer-gutters",
+        "value": "1020px"
+      },
+      {
+        "name": "compact-paper",
+        "value": "700px"
+      },
+      {
+        "name": "stacked-figure",
+        "value": "440px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Site navigation",
+      "kind": "nav",
+      "description": "Ordinary Home and AIPath page links with an active underline.",
+      "html": "<nav class=\"ds-site-tabs\" aria-label=\"Site navigation\">\n        <a href=\"../\">Home</a>\n        <a href=\"./\" aria-current=\"page\">AIPath</a>\n      </nav>",
+      "css": "/* Page navigation shared by the portfolio and its project notes. */\n.ds-site-tabs {\n  --tab-ink: var(--fg, var(--ink, #1a1a19));\n  --tab-muted: var(--muted, var(--secondary, #62625e));\n  display: flex;\n  align-items: stretch;\n  gap: 24px;\n  font: 400 12px/1.5 var(--mono, \"SFMono-Regular\", Consolas, \"Liberation Mono\", monospace);\n}\n\n.ds-site-tabs a {\n  display: inline-flex;\n  align-items: center;\n  min-height: 44px;\n  padding: 0 2px;\n  border-bottom: 2px solid transparent;\n  color: var(--tab-muted);\n  text-decoration: none;\n  white-space: nowrap;\n}\n\n.ds-site-tabs a:hover { color: var(--tab-ink); }\n.ds-site-tabs a[aria-current=\"page\"] { color: var(--tab-ink); border-bottom-color: var(--tab-ink); }\n\n@media (max-width: 440px) {\n  .ds-site-tabs { gap: 20px; font-size: 11px; }\n}\n:focus-visible { outline: 2px solid var(--link, #34558f); outline-offset: 5px; }",
+      "refersTo": "site-tab"
+    },
+    {
+      "name": "Theme toggle",
+      "kind": "button",
+      "description": "Light-theme button appearance; shared theme.js supplies switching and persistence.",
+      "html": "<button class=\"ds-theme-toggle\" type=\"button\" data-theme-toggle aria-label=\"Switch to dark mode\" title=\"Switch to dark mode\">\n          <svg class=\"ds-theme-moon\" viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\">\n            <path d=\"M20.5 13A8.5 8.5 0 0 1 11 3.5 8.5 8.5 0 1 0 20.5 13Z\" />\n          </svg>\n        </button>",
+      "css": ".ds-theme-toggle { display: grid; place-items: center; width: 44px; height: 44px; margin: -11px -10px -11px -8px; padding: 0; border: 0; background: transparent; color: var(--secondary, #62625e); }\n.ds-theme-toggle:hover { background: var(--subtle, #f2f2ef); color: var(--ink, #1a1a19); }:focus-visible { outline: 2px solid var(--link, #34558f); outline-offset: 5px; }",
+      "refersTo": "theme-toggle"
+    },
+    {
+      "name": "Illustrative request",
+      "kind": "custom",
+      "description": "Native expandable request with a labeled, scrollable code region.",
+      "html": "<details class=\"ds-trace-disclosure\">\n                <summary><span>Inspect the request</span><span class=\"ds-code-language\" aria-hidden=\"true\">JSON</span></summary>\n                <div class=\"ds-trace-content\">\n                  <p class=\"ds-example-note\">Illustrative input to <code>/run_workflow</code>; not a recorded execution.</p>\n                  <pre tabindex=\"0\" aria-label=\"Illustrative workflow request\"><code>{\n  \"url\": \"https://example.com\",\n  \"hint\": \"Find the API reference instead.\",\n  \"trace\": {\n    \"objective\": \"Find installation instructions\",\n    \"steps\": [\n      \"Open the documentation\",\n      \"Find the getting-started section\",\n      \"Read the installation instructions\"\n    ]\n  }\n}</code></pre>\n                </div>\n              </details>",
+      "css": "code, pre { font-family: var(--mono, \"SFMono-Regular\", Consolas, \"Liberation Mono\", monospace); }\npre code { font-size: inherit; }\n.ds-trace-disclosure { border: 1px solid var(--rule, #d8d8d2); }\n.ds-trace-disclosure summary { position: relative; display: flex; align-items: center; gap: 9px; min-height: 44px; padding: 10px 15px; cursor: pointer; list-style: none; font: 12px/1.6 var(--sans, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif); }\n.ds-trace-disclosure summary::-webkit-details-marker { display: none; }\n.ds-trace-disclosure summary::before { content: \"\"; width: 5px; height: 5px; border: solid currentColor; border-width: 1px 1px 0 0; transform: rotate(45deg); margin-right: 3px; flex: none; }\n.ds-trace-disclosure[open] summary::before { transform: rotate(135deg); }\n.ds-trace-disclosure summary:hover { background: var(--subtle, #f2f2ef); }\n.ds-code-language { margin-left: auto; font: 10px/1.5 var(--mono, \"SFMono-Regular\", Consolas, \"Liberation Mono\", monospace); color: var(--secondary, #62625e); }\n.ds-trace-content { padding: 14px 18px 18px; border-top: 1px solid var(--rule, #d8d8d2); background: var(--subtle, #f2f2ef); }\n.ds-example-note { margin: 0 0 14px; font: 12px/1.6 var(--sans, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif); color: var(--secondary, #62625e); }\npre { margin: 0; overflow-x: auto; color: var(--ink, #1a1a19); font-size: 12px; line-height: 1.8; tab-size: 2; scrollbar-color: var(--rule, #d8d8d2) var(--subtle, #f2f2ef); }\n.ds-trace-disclosure { color: var(--ink, #1a1a19); }\n:focus-visible { outline: 2px solid var(--link, #34558f); outline-offset: 5px; }",
+      "refersTo": "request-summary"
+    },
+    {
+      "name": "Workflow figure",
+      "kind": "custom",
+      "description": "Inline line drawings connect three stages; the figure stacks on narrow screens.",
+      "html": "<figure class=\"ds-pipeline\" aria-labelledby=\"pipeline-caption\">\n          <div class=\"ds-pipeline-flow\">\n            <div class=\"ds-pipeline-stage\">\n              <svg class=\"ds-stage-drawing\" viewBox=\"0 0 76 48\" width=\"76\" height=\"48\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" aria-hidden=\"true\">\n                <rect x=\"9\" y=\"5\" width=\"51\" height=\"34\" rx=\"1\" />\n                <path d=\"M9 13h51M17 20h19m-19 6h26m-26 6h16M60 19h7v25H19v-5\" />\n                <circle cx=\"14\" cy=\"9\" r=\".6\" fill=\"currentColor\" stroke=\"none\" />\n                <circle cx=\"18\" cy=\"9\" r=\".6\" fill=\"currentColor\" stroke=\"none\" />\n              </svg>\n              <h3>Demonstration</h3>\n              <p>Screen recording + narration</p>\n              <span class=\"ds-stage-notation\">video, audio</span>\n            </div>\n            <svg class=\"ds-pipeline-arrow\" viewBox=\"0 0 52 24\" width=\"52\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" aria-hidden=\"true\"><path d=\"M3 12h44m-5-5 5 5-5 5\" /></svg>\n            <div class=\"ds-pipeline-stage\">\n              <svg class=\"ds-stage-drawing\" viewBox=\"0 0 76 48\" width=\"76\" height=\"48\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" aria-hidden=\"true\">\n                <path d=\"M19 4H9v40h10m38-40h10v40H57M23 12h30M23 24h22M23 36h30\" />\n                <circle cx=\"17\" cy=\"12\" r=\"1\" fill=\"currentColor\" stroke=\"none\" />\n                <circle cx=\"17\" cy=\"24\" r=\"1\" fill=\"currentColor\" stroke=\"none\" />\n                <circle cx=\"17\" cy=\"36\" r=\"1\" fill=\"currentColor\" stroke=\"none\" />\n              </svg>\n              <h3>Reusable plan</h3>\n              <p>Ordered steps with context</p>\n              <span class=\"ds-stage-notation\">trace</span>\n            </div>\n            <svg class=\"ds-pipeline-arrow\" viewBox=\"0 0 52 24\" width=\"52\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" aria-hidden=\"true\"><path d=\"M3 12h44m-5-5 5 5-5 5\" /></svg>\n            <div class=\"ds-pipeline-stage\">\n              <svg class=\"ds-stage-drawing\" viewBox=\"0 0 76 48\" width=\"76\" height=\"48\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linejoin=\"round\" aria-hidden=\"true\">\n                <rect x=\"8\" y=\"5\" width=\"60\" height=\"38\" rx=\"1\" />\n                <path d=\"M8 13h60M16 21h23m-23 6h14M47 22v15l4-5 6-1-10-9Z\" />\n                <circle cx=\"13\" cy=\"9\" r=\".6\" fill=\"currentColor\" stroke=\"none\" />\n                <circle cx=\"17\" cy=\"9\" r=\".6\" fill=\"currentColor\" stroke=\"none\" />\n              </svg>\n              <h3>Browser execution</h3>\n              <p>The plan + a new instruction</p>\n              <span class=\"ds-stage-notation\">trace, hint, url</span>\n            </div>\n          </div>\n          <figcaption id=\"pipeline-caption\"><span class=\"ds-figure-number\">Figure 1.</span> A demonstration supplies the procedure. A new instruction supplies the next objective.</figcaption>\n        </figure>",
+      "css": ".ds-pipeline { margin: 35px 0 0; padding: 26px 0 22px; border-top: 1px solid var(--rule, #d8d8d2); border-bottom: 1px solid var(--rule, #d8d8d2); }\n.ds-pipeline-flow { display: grid; grid-template-columns: minmax(0, 1fr) 52px minmax(0, 1fr) 52px minmax(0, 1fr); align-items: center; }\n.ds-pipeline-stage { min-width: 0; text-align: center; }\n.ds-stage-drawing { display: block; margin: 0 auto 13px; color: var(--secondary, #62625e); }\n.ds-pipeline-stage h3 { font: 500 13px/1.5 var(--sans, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif); margin: 0 0 3px; }\n.ds-pipeline-stage p { font: 11.5px/1.6 var(--sans, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif); color: var(--secondary, #62625e); margin: 0; }\n.ds-stage-notation { display: block; margin-top: 8px; font: 10.5px/1.5 var(--mono, \"SFMono-Regular\", Consolas, \"Liberation Mono\", monospace); color: var(--secondary, #62625e); }\n.ds-pipeline-arrow { color: var(--secondary, #62625e); margin-top: -43px; width: 100%; }\nfigcaption { margin-top: 23px; text-align: center; color: var(--secondary, #62625e); font-size: 12.5px; line-height: 1.6; }\n.ds-figure-number { font-style: italic; color: var(--ink, #1a1a19); }\n\n\n@media (max-width: 440px) {\n  .ds-pipeline-flow { grid-template-columns: minmax(0, 1fr); gap: 8px; justify-items: center; }\n  .ds-pipeline-stage { width: 100%; display: grid; grid-template-columns: 70px minmax(0, 1fr); column-gap: 17px; padding: 0 14px; text-align: left; }\n  .ds-stage-drawing { grid-column: 1; grid-row: 1 / 4; margin: 0; align-self: center; }\n  .ds-pipeline-stage h3 { font-size: 13px; }\n  .ds-pipeline-stage p { font-size: 11px; }\n  .ds-stage-notation { font-size: 10px; margin-top: 4px; }\n  .ds-pipeline-arrow { height: 25px; width: 25px; margin: 1px 0 1px 0; transform: rotate(90deg); }\n  .ds-pipeline { padding-top: 23px; }\n}\n.ds-pipeline { color: var(--ink, #1a1a19); font-family: var(--serif, Georgia, \"Times New Roman\", serif); }"
+    },
+    {
+      "name": "Implementation table",
+      "kind": "custom",
+      "description": "Two-column comparison with fine row rules and secondary technical notes.",
+      "html": "<table class=\"ds-implementation-table\">\n              <caption class=\"ds-visually-hidden\">Components and technologies in the original prototype</caption>\n              <thead><tr><th scope=\"col\">Component</th><th scope=\"col\">Implementation</th></tr></thead>\n              <tbody>\n                <tr><th scope=\"row\">Recorder &amp; interface</th><td>Next.js, React, TypeScript<br /><span class=\"ds-table-note\">Browser screen and microphone capture</span></td></tr>\n                <tr><th scope=\"row\">Workflow library</th><td>Supabase<br /><span class=\"ds-table-note\">Workflow records and storage helpers</span></td></tr>\n                <tr><th scope=\"row\">Video interpretation</th><td>FFmpeg, GPT-4o, Whisper<br /><span class=\"ds-table-note\">Frames, visual summaries, and transcripts</span></td></tr>\n                <tr><th scope=\"row\">Planning &amp; execution</th><td>GPT-4, LaVague, Selenium<br /><span class=\"ds-table-note\">Task context and browser interaction</span></td></tr>\n                <tr><th scope=\"row\">API</th><td>Python, FastAPI<br /><span class=\"ds-table-note\">Workflow creation and execution endpoints</span></td></tr>\n              </tbody>\n            </table>",
+      "css": ".ds-visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }\n.ds-implementation-table { width: 100%; margin: 22px 0 17px; border-collapse: collapse; text-align: left; }\n.ds-implementation-table th, .ds-implementation-table td { padding: 14px 0; vertical-align: top; border-bottom: 1px solid var(--rule, #d8d8d2); }\n.ds-implementation-table thead th { padding-top: 0; padding-bottom: 9px; color: var(--secondary, #62625e); font: 11px/1.5 var(--mono, \"SFMono-Regular\", Consolas, \"Liberation Mono\", monospace); }\n.ds-implementation-table tbody th { width: 37%; padding-right: 24px; font: 400 14px/1.6 var(--sans, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif); }\n.ds-implementation-table td { font: 13px/1.6 var(--sans, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif); }\n.ds-table-note { display: inline-block; margin-top: 3px; color: var(--secondary, #62625e); font-size: 12px; }\n.ds-implementation-table { color: var(--ink, #1a1a19); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "A research paper made for the web",
+    "overview": "This document covers `/aipath/` only. It extends the personal site's neutral palette, shared page navigation, and remembered theme. The root `DESIGN.md` continues to govern the portfolio; this route adds the user's approved engineering-paper form.\n\nSerif paragraphs carry the explanation, thin rules divide technical material, and small monospaced labels identify sources and notation. The implementation uses local font stacks, HTML, CSS, inline SVG, and the shared theme script, with no external font dependency.",
+    "keyCharacteristics": [
+      "Narrow serif reading column inside a wider figure column.",
+      "Restrained blue links on neutral light and dark surfaces.",
+      "Numbered sections, simple line drawings, and source references.",
+      "Native disclosure and ordinary page links, without decorative motion."
+    ],
+    "rules": [
+      {
+        "name": "The Shared Theme Rule",
+        "body": "Use the shared `varun-theme` preference across routes. Follow the system until a valid saved choice exists; preserve the CSS system-theme fallback when JavaScript is absent.",
+        "section": "colors"
+      },
+      {
+        "name": "The Reading Roles Rule",
+        "body": "Use serif for explanations, sans for compact interface and technical comparison text, and mono for notation and source metadata.",
+        "section": "typography"
+      },
+      {
+        "name": "The Paper Surface Rule",
+        "body": "Separate technical material through whitespace, fine rules, and the existing subtle surface rather than elevation.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do preserve the shared theme, palette, and active-page navigation across the portfolio and this route.",
+      "Do keep reading text narrow and allow figures to use the wider paper column.",
+      "Do use semantic figures, tables, links, and native disclosure with visible keyboard focus.",
+      "Do keep technical diagrams simple, inline, and legible in both themes and print."
+    ],
+    "donts": [
+      "Don't extend this route's paper hierarchy into unrelated portfolio surfaces by default.",
+      "Don't replace ordinary navigation links or native disclosure with JavaScript-only controls.",
+      "Don't add decorative motion, floating shadows, or external font dependencies to this approved paper treatment."
+    ]
+  }
+}
