@@ -126,7 +126,7 @@ h1 {
 
 .places { color: var(--muted); flex: none; }
 .place-list { list-style: none; margin: 0; padding: 0; display: grid; row-gap: 4px; }
-.place-row { display: grid; grid-template-columns: 12ch 8ch 62px; column-gap: 10px; align-items: center; white-space: nowrap; }
+.place-row { display: grid; grid-template-columns: 9ch 8ch 62px; column-gap: 10px; align-items: center; white-space: nowrap; }
 .place-name { text-decoration: none; }
 .place-time { text-align: right; }
 .place-weather { display: flex; align-items: center; justify-content: flex-end; gap: 6px; }
