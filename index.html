@@ -1,54 +1,239 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Work in Progress</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        background-color: black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        font-family: "Courier New", monospace;
-      }
-
-      .loading-text {
-        color: #ffffff;
-        font-size: 24px;
-        text-align: center;
-        text-shadow: 0 0 10px #ffffff;
-        letter-spacing: 2px;
-        border-right: 2px solid #ffffff;
-        white-space: nowrap;
-        overflow: hidden;
-        animation: typing 3s steps(10) infinite,
-          cursor 0.4s step-end infinite alternate;
-        width: 0;
-      }
-
-      @keyframes typing {
-        0%,
-        100% {
-          width: 0;
-        }
-        30%,
-        70% {
-          width: 11ch;
-        }
-      }
-
-      @keyframes cursor {
-        50% {
-          border-color: transparent;
-        }
-      }
-    </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Varun Kandula</title>
+    <meta name="description" content="Varun Kandula. Co-founder and CTO of Kinect (YC P26). Engineer, angel investor, watch person." />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#fbfbfa" />
+    <script src="js/theme.js"></script>
+    <meta property="og:title" content="Varun Kandula" />
+    <meta property="og:description" content="Co-founder and CTO of Kinect (YC P26)." />
+    <meta property="og:image" content="/assets/avatar.jpg" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23111' stroke-width='2.5'/%3E%3Cpath d='M16 8v8l5 3' stroke='%23111' stroke-width='2.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div class="loading-text">Loading...</div>
+    <main class="page">
+      <header class="top rise">
+        <div class="id">
+          <button class="avatar" type="button" aria-label="Show portrait" data-portrait>
+            <img src="assets/avatar.jpg" alt="Varun Kandula" width="40" height="40" />
+          </button>
+          <div>
+            <h1>Varun Kandula</h1>
+            <p class="muted">Co-founder &amp; CTO, <a href="https://trykinect.ai">Kinect</a></p>
+          </div>
+        </div>
+        <div class="header-tools">
+          <p class="clock mono">
+            <span class="dot" aria-hidden="true"></span><abbr title="San Francisco">SF</abbr> <span data-clock>--:--</span>
+          </p>
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode" title="Switch to dark mode" hidden>
+            <svg class="theme-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20.5 13A8.5 8.5 0 0 1 11 3.5 8.5 8.5 0 1 0 20.5 13Z" />
+            </svg>
+            <svg class="theme-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" />
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <section class="block rise" id="about" style="--d: 1">
+        <h2 class="label mono">About</h2>
+        <div class="prose">
+          <p>
+            I'm building <a href="https://trykinect.ai">Kinect</a>, an AI revenue platform for DTC brands,
+            with <a href="https://www.linkedin.com/in/kratikagrawal/">Kratik</a>. We're backed by
+            <a href="https://www.ycombinator.com/companies/kinect">Y Combinator</a> and live on a handful of
+            brands you've probably bought from.
+          </p>
+          <p>
+            Before this I worked on data systems at MongoDB, connected customer data for AI tools at Reevo,
+            and consulted on AI features for Sephora. I also ran my own ecommerce store, which is mostly how I
+            learned what a conversion costs.
+          </p>
+          <p>
+            I studied computer science and data science at Berkeley and played D1 squash there. These days
+            I'm in San Francisco, building, writing small checks, and looking at watches more than I should.
+          </p>
+        </div>
+      </section>
+
+      <section class="block rise" id="experience" style="--d: 2">
+        <h2 class="label mono">Experience</h2>
+        <ol class="rows" data-dim>
+          <li>
+            <details>
+              <summary>
+                <span class="row-main"><span class="row-title">Kinect</span><span class="row-sub">Co-founder &amp; CTO</span></span>
+                <span class="row-meta mono">2026–</span>
+              </summary>
+              <p>AI sales reps, dynamic product and landing pages, and generative storefronts for Shopify brands. YC P26.</p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>
+                <span class="row-main"><span class="row-title">Sephora</span><span class="row-sub">AI consulting</span></span>
+                <span class="row-meta mono">2025</span>
+              </summary>
+              <p>Scoped and prototyped AI features for one of the largest beauty retailers in the world.</p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>
+                <span class="row-main"><span class="row-title">Reevo</span><span class="row-sub">Engineering</span></span>
+                <span class="row-meta mono">2025</span>
+              </summary>
+              <p>Connected customer information across systems so AI tools had real context to work with.</p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>
+                <span class="row-main"><span class="row-title">MongoDB</span><span class="row-sub">Software engineering</span></span>
+                <span class="row-meta mono">2024</span>
+              </summary>
+              <p>Built a real-time engineering analytics dashboard and cut ETL processing time by 30%. New York.</p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>
+                <span class="row-main"><span class="row-title">Ford</span><span class="row-sub">Software engineering</span></span>
+                <span class="row-meta mono">2023</span>
+              </summary>
+              <p>A 2D packing algorithm and a 3-axis gantry arm for the kitting cell, which cut part delivery time by about 75%. Dearborn.</p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>
+                <span class="row-main"><span class="row-title">Cruuz</span><span class="row-sub">Software engineering</span></span>
+                <span class="row-meta mono">2022</span>
+              </summary>
+              <p>Front-end work and a Google Reserve booking integration. Los Angeles.</p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>
+                <span class="row-main"><span class="row-title">UC Berkeley</span><span class="row-sub">B.A. Computer Science, Data Science</span></span>
+                <span class="row-meta mono">2024</span>
+              </summary>
+              <p>D1 squash. Certificate in Entrepreneurship &amp; Technology. Ran NextGen Consulting (50+ members, clients like NVIDIA and Palantir).</p>
+            </details>
+          </li>
+        </ol>
+      </section>
+
+      <section class="block rise" id="building" style="--d: 3">
+        <h2 class="label mono">On the side</h2>
+        <ol class="rows stack" data-dim>
+          <li class="row-static">
+            <span class="row-main"><span class="row-title">Fall detection camera</span><span class="row-sub">A vision device that spots falls in older adults. Patent pending.</span></span>
+            <span class="row-meta mono">2022</span>
+          </li>
+          <li class="row-static">
+            <span class="row-main"><span class="row-title">My own store</span><span class="row-sub">Paid for traffic, fought for every conversion.</span></span>
+            <span class="row-meta mono">—</span>
+          </li>
+          <li class="row-static">
+            <span class="row-main"><span class="row-title">AIPath</span><span class="row-sub">A web agent that learns workflows from screen recordings.</span></span>
+            <span class="row-meta mono">2024</span>
+          </li>
+        </ol>
+      </section>
+
+      <section class="block rise" id="investing" style="--d: 4">
+        <h2 class="label mono">Angel investing</h2>
+        <div>
+          <p class="muted lede">Small checks into founders I'd want to work for. Happy to talk if you're early and building in commerce or AI.</p>
+          <ol class="rows invest" data-dim>
+            <li class="row-static">
+              <span class="row-main"><span class="row-title">Company</span><span class="row-sub">What they do, in one line</span></span>
+              <span class="row-meta mono">Pre-seed · 2026</span>
+            </li>
+            <li class="row-static">
+              <span class="row-main"><span class="row-title">Company</span><span class="row-sub">What they do, in one line</span></span>
+              <span class="row-meta mono">Seed · 2025</span>
+            </li>
+            <li class="row-static">
+              <span class="row-main"><span class="row-title">Company</span><span class="row-sub">What they do, in one line</span></span>
+              <span class="row-meta mono">Seed · 2025</span>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="block rise" id="watches" style="--d: 5">
+        <h2 class="label mono">Watches</h2>
+        <div>
+          <p class="muted lede">The collection, running on your clock.</p>
+          <ul class="watches" data-watches>
+            <li class="watch" data-watch="diver" data-name="Diver">
+              <div class="watch-cap"><b>Diver</b><span>Reference</span><span>The daily</span></div>
+            </li>
+            <li class="watch" data-watch="dress" data-name="Dress">
+              <div class="watch-cap"><b>Dress</b><span>Reference</span><span>Weddings, dinners</span></div>
+            </li>
+            <li class="watch" data-watch="field" data-name="Field">
+              <div class="watch-cap"><b>Field</b><span>Reference</span><span>Weekends</span></div>
+            </li>
+            <li class="watch" data-watch="chrono" data-name="Chronograph">
+              <div class="watch-cap"><b>Chronograph</b><span>Reference</span><span>The grail, for now</span></div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="block rise" id="interests" style="--d: 6">
+        <h2 class="label mono">Interests</h2>
+        <ul class="tags">
+          <li>Squash <span>played D1</span></li>
+          <li>Boxing</li>
+          <li>Golf <span>working on it</span></li>
+          <li>Photography</li>
+          <li>Carpentry</li>
+          <li>Tabla <span>Indian classical</span></li>
+          <li>Poker</li>
+          <li>Watches</li>
+        </ul>
+      </section>
+
+      <footer class="block foot rise" style="--d: 7">
+        <h2 class="label mono">Elsewhere</h2>
+        <div>
+          <ul class="links">
+            <li><a href="mailto:varun@trykinect.ai" class="link" data-copy="varun@trykinect.ai">Email</a></li>
+            <li><a href="https://x.com/VarunKand">X</a></li>
+            <li><a href="https://www.linkedin.com/in/varunkandula/">LinkedIn</a></li>
+            <li><a href="https://github.com/VarunKandula">GitHub</a></li>
+          </ul>
+          <p class="muted mono small">Updated Nov 2026</p>
+        </div>
+      </footer>
+    </main>
+
+    <div class="toast mono" role="status" aria-live="polite" data-toast></div>
+    <dialog class="portrait" data-portrait-dialog aria-label="Portrait of Varun Kandula">
+      <button class="portrait-close" type="button" data-portrait-close aria-label="Close portrait" autofocus>
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6" /></svg>
+      </button>
+      <img src="assets/portrait.jpg" alt="Varun Kandula at UC Berkeley" width="599" height="900" loading="lazy" />
+    </dialog>
+
+    <script src="js/main.js" defer></script>
   </body>
 </html>
