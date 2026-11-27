@@ -101,7 +101,7 @@ Terracotta (`light-accent` / `dark-accent`) marks watch details and keyboard foc
 
 Each theme provides the same semantic roles: `bg` for canvas and watch cases; `fg` for primary text and watch ink; `muted` for supporting text; `faint` for underlines and hover borders; `line` for section and control boundaries; `hover` for interaction surfaces. CSS aliases these roles to the corresponding theme values above. Selection reverses foreground and background; scrollbars use faint against background.
 
-The San Francisco clock has its own green status dot (`#3fa86b`), not a general success or action palette.
+Header clocks and weather use supporting ink. Static weather icons replace the previous green pulsing status dot, keeping the three-city group quiet.
 
 The sidecar's synthesized tonal strips serve documentation previews only; the shipped themes use the exact colors above.
 
@@ -121,11 +121,11 @@ The centered page has a maximum outer width of 680px, including 24px side paddin
 
 Sections have a 132px label column, a flexible content column, a 24px gap, 28px vertical padding, and a 1px top rule. Paragraphs separate by 14px. Rows keep dates at the right; side-project descriptions always stack below titles. Four watches share equal columns with 20px vertical and 16px horizontal gaps.
 
-At widths up to and including 640px, page padding becomes 56px 20px 96px. Header spacing becomes 48px; the clock moves below identity and toggle. Sections become one column with a 12px gap and 24px vertical padding. Row descriptions stack, titles wrap, and watches become two columns with 24px vertical and 20px horizontal gaps. Tags and contact links wrap naturally.
+At widths up to and including 640px, page padding becomes 56px 20px 96px. Header spacing becomes 48px; the complete three-city clock group moves below identity and toggle. Sections become one column with a 12px gap and 24px vertical padding. Row descriptions stack, titles wrap, and watches become two columns with 24px vertical and 20px horizontal gaps. Tags and contact links wrap naturally.
 
 ## Elevation & Depth
 
-Sections and rows remain flat; thin rules and hover fills provide separation. The portrait uses a backdrop mixed from the active canvas at 70% opacity with an 8px blur. The clock's expanding green halo is status decoration, not a reusable elevation shadow. The toast reverses canvas and text colors without a shadow.
+Sections and rows remain flat; thin rules and hover fills provide separation. The portrait uses a backdrop mixed from the active canvas at 70% opacity with an 8px blur. The toast reverses canvas and text colors without a shadow.
 
 **The Open Surface Rule.** Preserve section rules and unboxed content as the page's structure.
 
@@ -144,6 +144,10 @@ Theme follows the operating system until an explicit choice, saved under `varun-
 ### Portrait
 
 The supplied avatar opens a native modal dialog containing `assets/portrait.jpg`. Width is bounded by `min(360px, 80vw, calc(80vh * 599 / 900))`. The close control sits 12px from the top/right; native Escape dismissal, the explicit button, and backdrop clicks close the viewer. The close button receives initial focus.
+
+### Local times and weather
+
+An unboxed list shows SF, Hillsborough, and Hyderabad in three aligned rows of city, local time, and weather. It uses the existing 11.5px monospaced supporting text, 4px row gaps, and 16px static weather icons with the toggle's 1.5-unit strokes. Weather columns reserve space while loading or unavailable; a dash replaces missing or expired data. A small Open-Meteo credit sits beneath the group. Time and date tooltips carry full location and timezone details without adding visual density. Both themes share the same structure, with the entire group moving below identity on mobile.
 
 ### Rows
 

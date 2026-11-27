@@ -1,11 +1,4 @@
 (() => {
-  const TZ = "America/Los_Angeles";
-  const clock = document.querySelector("[data-clock]");
-  const fmt = new Intl.DateTimeFormat("en-US", { hour: "numeric", minute: "2-digit", timeZone: TZ });
-  const tickClock = () => clock && (clock.textContent = fmt.format(new Date()).toLowerCase());
-  tickClock();
-  setInterval(tickClock, 15000);
-
   // copy email
   const toast = document.querySelector("[data-toast]");
   let toastTimer;

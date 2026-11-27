@@ -14,7 +14,8 @@ Varun Kandula's personal website, rebuilt from his supplied Devin export and scr
 
 - A static HTML, CSS, and JavaScript site with no build step. The existing GitHub Pages configuration publishes the root of `main`.
 - Preserve the supplied biography, experience, side projects, investing section, watches, interests, contact links, and photography.
-- Keep the San Francisco clock, expandable experience, portrait viewer, email-copy interaction, and four watch faces showing the visitor's current time.
+- Keep expandable experience, the portrait viewer, email-copy interaction, and four watch faces showing the visitor's current time.
+- The header shows local times for San Francisco, Hillsborough (New Jersey), and Hyderabad (India), with subtle current-weather icons and temperatures in Fahrenheit. Time remains available independently of the weather provider.
 - The theme follows the system until the visitor chooses light or dark, then remembers that choice when browser storage is available.
 - Support desktop and mobile layouts and keyboard interaction.
 - Two optional easter eggs reward discovery: wind a watch face, or open a short rally game from the Squash interest. Keep both quiet until activated, with keyboard/touch controls and reduced-motion behavior.
