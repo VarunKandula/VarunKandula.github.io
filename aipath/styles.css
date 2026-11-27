@@ -52,6 +52,8 @@ pre code { font-size: inherit; }
 .skip-link:focus { transform: translateY(0); }
 
 .masthead { max-width: 936px; margin: 0 auto; padding: 14px 0; border-bottom: 1px solid var(--rule); display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.back-link { display: inline-flex; align-items: center; min-height: 44px; color: var(--secondary); text-decoration: none; font: 12px/1.5 var(--sans); }
+.back-link:hover { color: var(--ink); text-decoration: underline; }
 .site-nav { display: flex; align-items: center; gap: 28px; font: 12px/1.5 var(--sans); }
 .site-nav a { color: var(--secondary); text-decoration: none; }
 .site-nav a:hover { color: var(--ink); text-decoration: underline; }

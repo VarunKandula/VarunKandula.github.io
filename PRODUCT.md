@@ -13,7 +13,7 @@ Varun Kandula's personal website, rebuilt from his supplied Devin export and scr
 ## Capabilities and Constraints
 
 - A static HTML, CSS, and JavaScript site with no build step. The existing GitHub Pages configuration publishes the root of `main`.
-- `/aipath/` documents the 2024 AIPath prototype in the user's requested research-paper style: a readable technical note, simple diagrams, implementation details, and links to the original repositories. Shared Home / AIPath tabs connect the pages, with the active page indicated visually and to assistive technology. The project-list link remains, and both pages share the remembered theme.
+- `/aipath/` documents the 2024 AIPath prototype in the user's requested research-paper style: a readable technical note, simple diagrams, implementation details, and links to the original repositories. The AIPath project entry is the homepage's only link to the paper; the user explicitly does not want site tabs. The paper has a simple return link, and both pages share the remembered theme.
 - Preserve the supplied biography, experience, side projects, investing section, watches, interests, contact links, and photography.
 - Keep expandable experience, the portrait viewer, email-copy interaction, and four watch faces showing the visitor's current time.
 - The header shows local times for SF, Boro (Hillsborough, New Jersey), and HYD (Hyderabad, India), with subtle current-weather icons and temperatures in Fahrenheit. Time remains available independently of the weather provider.

@@ -57,11 +57,9 @@ components:
   theme-toggle-hover:
     backgroundColor: "{colors.subtle}"
     textColor: "{colors.ink}"
-  site-tab:
+  back-link:
     textColor: "{colors.secondary}"
-    padding: "0 2px"
-  site-tab-active:
-    textColor: "{colors.ink}"
+    minHeight: "44px"
   request-summary:
     typography: "{typography.interface}"
     padding: "10px 15px"
@@ -79,7 +77,7 @@ components:
 
 **Creative North Star: "A research paper made for the web"**
 
-This document covers `/aipath/` only. It extends the personal site's neutral palette, shared page navigation, and remembered theme. The root `DESIGN.md` continues to govern the portfolio; this route adds the user's approved engineering-paper form.
+This document covers `/aipath/` only. It extends the personal site's neutral palette and remembered theme. Readers enter through the AIPath project entry and return through a simple back link. The root `DESIGN.md` continues to govern the portfolio; this route adds the user's approved engineering-paper form.
 
 Serif paragraphs carry the explanation, thin rules divide technical material, and small monospaced labels identify sources and notation. The implementation uses local font stacks, HTML, CSS, inline SVG, and the shared theme script, with no external font dependency.
 
@@ -90,7 +88,7 @@ Serif paragraphs carry the explanation, thin rules divide technical material, an
 - Numbered sections, simple line drawings, and source references.
 - Native disclosure and ordinary page links, without decorative motion.
 
-Evidence: `index.html`, `styles.css`, `../css/site-tabs.css`, and `../js/theme.js`. The route brief remains in `../.impeccable/surfaces/aipath-index-html.md`; page strategy belongs there.
+Evidence: `index.html`, `styles.css`, and `../js/theme.js`. The route brief remains in `../.impeccable/surfaces/aipath-index-html.md`; page strategy belongs there.
 
 ## Colors
 
@@ -103,8 +101,8 @@ The palette is warm-neutral paper and ink, with blue reserved for links and keyb
 ### Neutral
 
 - **Paper** (`paper`, `paper-dark`): the uninterrupted page background.
-- **Ink** (`ink`, `ink-dark`): reading text, headings, and the active page underline.
-- **Secondary ink** (`secondary`, `secondary-dark`): metadata, diagram strokes, captions, and inactive navigation.
+- **Ink** (`ink`, `ink-dark`): reading text and headings.
+- **Secondary ink** (`secondary`, `secondary-dark`): metadata, diagram strokes, captions, and navigation.
 - **Fine rule** (`rule`, `rule-dark`): section, figure, table, and disclosure boundaries.
 - **Subtle surface** (`subtle`, `subtle-dark`): disclosed code and hover feedback.
 
@@ -124,13 +122,13 @@ The hierarchy combines a large, regular-weight paper title with bold section hea
 - **Headline:** numbered section headings use the frontmatter headline role; reduce to 22px at 700px.
 - **Title:** method subheadings use the title role; reduce to 16px at 700px.
 - **Body:** the frontmatter body role reduces to 16px at 700px. The abstract is slightly smaller (16px desktop, 15px mobile) with the same generous line height.
-- **Label:** small mono identifies publication metadata and example fields. Navigation uses a separate shared mono treatment (12px/1.5; 11px below 440px).
+- **Label:** small mono identifies publication metadata and example fields. Navigation uses the platform sans stack.
 
 **The Reading Roles Rule.** Use serif for explanations, sans for compact interface and technical comparison text, and mono for notation and source metadata.
 
 ## Layout
 
-Three centered widths organize the page: masthead/footer (936px maximum), paper/figures (820px), and reading text (660px). Desktop masthead padding is 14px vertically; its two navigation groups align across a fine bottom rule. The paper title starts 65px below its container's top.
+Three centered widths organize the page: masthead/footer (936px maximum), paper/figures (820px), and reading text (660px). Desktop masthead padding is 14px vertically; the back link and paper navigation align across a fine bottom rule. The paper title starts 65px below its container's top.
 
 At 1020px and below, the masthead/footer have 32px side gutters and the paper has 40px. At 700px, the masthead uses 22px gutters and 9px vertical padding; the paper/footer use 24px gutters. The paper title's top spacing becomes 43px. Section spacing follows the section tokens; paragraph spacing uses the paragraph token.
 
@@ -146,13 +144,13 @@ There are no shadows, gradients, floating cards, or decorative transitions in th
 
 ## Shapes
 
-Containers and controls are square. Borders are fine (1px); the active page underline is stronger (2px). The line drawings use simple rectangles, paths, and circles, including minimal corner rounding inside browser-window illustrations. The disclosure chevron is drawn with CSS borders; theme controls use inline SVG.
+Containers and controls are square. Borders are fine (1px). The line drawings use simple rectangles, paths, and circles, including minimal corner rounding inside browser-window illustrations. The disclosure chevron is drawn with CSS borders; theme controls use inline SVG.
 
 ## Components
 
 ### Navigation
 
-Home and AIPath are ordinary links in a labeled site navigation. Their shared mono styling uses a 24px gap, 44px minimum height, neutral secondary text, and 2px transparent bottom borders. The current link uses ink and an ink underline with `aria-current="page"`. Hover changes text to ink. Below 440px, the gap is 20px.
+The homepage's AIPath project entry is the only navigation into the paper. A plain “Back to portfolio” link in the masthead returns to the homepage. It uses 12px/1.5 platform sans, a 44px minimum height, and secondary text; hover promotes it to ink with an underline. There are no site tabs.
 
 A separate sans paper navigation holds section anchors, GitHub, and the theme toggle. It uses 28px gaps, reducing to 17px at 700px; the Implementation shortcut is hidden at that breakpoint while its section remains available in the document.
 
@@ -176,7 +174,7 @@ The implementation table uses horizontal row rules, left alignment, a 37% first 
 
 ### Do:
 
-- **Do** preserve the shared theme, palette, and active-page navigation across the portfolio and this route.
+- **Do** preserve the shared theme and palette, with the project entry as the only homepage link into the paper.
 - **Do** keep reading text narrow and allow figures to use the wider paper column.
 - **Do** use semantic figures, tables, links, and native disclosure with visible keyboard focus.
 - **Do** keep technical diagrams simple, inline, and legible in both themes and print.

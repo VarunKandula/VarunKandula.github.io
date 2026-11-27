@@ -13,9 +13,8 @@ Open [localhost:8000](http://localhost:8000).
 ## Edit
 
 - `index.html`: biography, experience, projects, investments, watch captions, and links.
-- `aipath/index.html` and `aipath/styles.css`: the AIPath technical project page at `/aipath/`, with a pipeline diagram, native example disclosure, original source links, and print styles. It shares the saved theme through `js/theme.js` and adds no dependencies.
+- `aipath/index.html` and `aipath/styles.css`: the AIPath technical project page at `/aipath/`, reached from the AIPath project entry. It has a pipeline diagram, native example disclosure, original source links, and print styles. It shares the saved theme through `js/theme.js` and adds no dependencies.
 - `css/styles.css`: layout and light/dark theme tokens.
-- `css/site-tabs.css`: shared Home / AIPath navigation; each page marks its active tab with `aria-current="page"`.
 - `js/theme.js`: applies the theme before first paint, follows the system until a choice is made, and saves the choice in `localStorage` as `varun-theme`.
 - `js/places.js`: local times for SF, Boro (Hillsborough, NJ), and HYD (Hyderabad), plus cached current weather from Open-Meteo.
 - `js/main.js`: live watch faces and winding, email copying, and portrait dialog.

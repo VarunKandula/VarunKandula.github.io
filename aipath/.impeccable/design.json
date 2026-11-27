@@ -214,12 +214,12 @@
   },
   "components": [
     {
-      "name": "Site navigation",
+      "name": "Back to portfolio",
       "kind": "nav",
-      "description": "Ordinary Home and AIPath page links with an active underline.",
-      "html": "<nav class=\"ds-site-tabs\" aria-label=\"Site navigation\">\n        <a href=\"../\">Home</a>\n        <a href=\"./\" aria-current=\"page\">AIPath</a>\n      </nav>",
-      "css": "/* Page navigation shared by the portfolio and its project notes. */\n.ds-site-tabs {\n  --tab-ink: var(--fg, var(--ink, #1a1a19));\n  --tab-muted: var(--muted, var(--secondary, #62625e));\n  display: flex;\n  align-items: stretch;\n  gap: 24px;\n  font: 400 12px/1.5 var(--mono, \"SFMono-Regular\", Consolas, \"Liberation Mono\", monospace);\n}\n\n.ds-site-tabs a {\n  display: inline-flex;\n  align-items: center;\n  min-height: 44px;\n  padding: 0 2px;\n  border-bottom: 2px solid transparent;\n  color: var(--tab-muted);\n  text-decoration: none;\n  white-space: nowrap;\n}\n\n.ds-site-tabs a:hover { color: var(--tab-ink); }\n.ds-site-tabs a[aria-current=\"page\"] { color: var(--tab-ink); border-bottom-color: var(--tab-ink); }\n\n@media (max-width: 440px) {\n  .ds-site-tabs { gap: 20px; font-size: 11px; }\n}\n:focus-visible { outline: 2px solid var(--link, #34558f); outline-offset: 5px; }",
-      "refersTo": "site-tab"
+      "description": "A simple return link; the project entry is the only homepage link into the paper.",
+      "html": "<a class=\"ds-back-link\" href=\"../\">Back to portfolio</a>",
+      "css": ".ds-back-link { display: inline-flex; align-items: center; min-height: 44px; color: var(--secondary, #62625e); text-decoration: none; font: 12px/1.5 -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif; }\n.ds-back-link:hover { color: var(--ink, #1a1a19); text-decoration: underline; }\n.ds-back-link:focus-visible { outline: 2px solid var(--link, #34558f); outline-offset: 5px; }",
+      "refersTo": "back-link"
     },
     {
       "name": "Theme toggle",
@@ -254,7 +254,7 @@
   ],
   "narrative": {
     "northStar": "A research paper made for the web",
-    "overview": "This document covers `/aipath/` only. It extends the personal site's neutral palette, shared page navigation, and remembered theme. The root `DESIGN.md` continues to govern the portfolio; this route adds the user's approved engineering-paper form.\n\nSerif paragraphs carry the explanation, thin rules divide technical material, and small monospaced labels identify sources and notation. The implementation uses local font stacks, HTML, CSS, inline SVG, and the shared theme script, with no external font dependency.",
+    "overview": "This document covers `/aipath/` only. It extends the personal site's neutral palette and remembered theme. Readers enter through the AIPath project entry and return through a simple back link. The root `DESIGN.md` continues to govern the portfolio; this route adds the user's approved engineering-paper form.\n\nSerif paragraphs carry the explanation, thin rules divide technical material, and small monospaced labels identify sources and notation. The implementation uses local font stacks, HTML, CSS, inline SVG, and the shared theme script, with no external font dependency.",
     "keyCharacteristics": [
       "Narrow serif reading column inside a wider figure column.",
       "Restrained blue links on neutral light and dark surfaces.",
@@ -279,7 +279,7 @@
       }
     ],
     "dos": [
-      "Do preserve the shared theme, palette, and active-page navigation across the portfolio and this route.",
+      "Do preserve the shared theme and palette, with the project entry as the only homepage link into the paper.",
       "Do keep reading text narrow and allow figures to use the wider paper column.",
       "Do use semantic figures, tables, links, and native disclosure with visible keyboard focus.",
       "Do keep technical diagrams simple, inline, and legible in both themes and print."
