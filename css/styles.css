@@ -322,7 +322,7 @@ h1 {
   padding: 0;
   border: 0;
   background: none;
-  width: min(360px, 80vw, calc(80vh * 599 / 900));
+  width: min(360px, 80vw, calc(80vh * 3 / 4));
   border-radius: 14px;
   overflow: hidden;
 }

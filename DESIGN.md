@@ -147,7 +147,7 @@ Theme follows the operating system until an explicit choice, saved under `varun-
 
 ### Portrait
 
-The supplied avatar opens a native modal dialog containing `assets/portrait.jpg`. Width is bounded by `min(360px, 80vw, calc(80vh * 599 / 900))`. The close control sits 12px from the top/right; native Escape dismissal, the explicit button, and backdrop clicks close the viewer. The close button receives initial focus.
+The supplied avatar opens a native modal dialog containing `assets/portrait.jpg`. Width is bounded by `min(360px, 80vw, calc(80vh * 3 / 4))`. The close control sits 12px from the top/right; native Escape dismissal, the explicit button, and backdrop clicks close the viewer. The close button receives initial focus.
 
 ### Local times and weather
 
